@@ -1,0 +1,56 @@
+#skillsList {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center; 
+	align-content: space-around;
+}
+
+#centeredContent {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	align-content: space-around;
+}
+
+#welcomer {
+	display: inline;
+	font: 50px bebas neue, sans-serif;
+	text-align: center;
+	border-bottom: 3px solid rgba(0,0,0,0.2);
+	margin-top: 0;
+}
+
+#blurb {
+	font: italic 18px lato,sans-serif;
+	padding: 0px 5vw 25px 5vw;
+	line-height: 150%;
+	letter-spacing: 0.2px;
+}
+
+.heroImage {
+	width: 40vw;
+	max-width: 1000px;
+	min-width: 270px;
+	margin: 0;
+	padding: 0;
+}
+
+.subheading {
+	font: 13px lato,sans-serif;
+	color: rgba(0,0,0,0.5);
+	font-weight: 700;
+	text-transform: uppercase;
+	text-align: center;
+	width: auto;
+	padding: 20px 20px 5px 20px;
+	margin: auto;
+	border-bottom-style: solid;
+	border-width: 3px;
+	border-color: rgba(0,0,0,0.1);
+}
+
+#lineBreak {
+	width: 100%;
+}

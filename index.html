@@ -1,18 +1,106 @@
-<!DOCTYPE html>
+<!doctype html>
 <head>
-    <title>therdas</title>
-    <style>
-    body{
-        text-align: center;
-    }
-    h1{
-        font-family: "Seorge UI", "Ubuntu Regular", sans-serif;
-        font-size: 20%;
-    }
-    </style>
+  <title> Template Page </title>
+  <link rel="stylesheet" media="screen and (max-width: 800px)" href="css/genericmobile.css">
+  <link rel="stylesheet" media="screen and (min-width: 800px)" href="css/generic.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/circle.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700i,900&amp;subset=latin-ext" rel="stylesheet">
+  <script src="script/navigation.js"></script>
+  <script src="script/main.js"></script>
 </head>
 <body>
-    <h1>Working?</h1>
-    <p>Working!</p>
+  <div class="bodyWrap">
+    <div class="sidebar">
+      <img src="header.png" id="headerImage" />
+
+      <div class="smallDivider"></div>
+
+      <div class ="navigation">
+        <ul class="navigationContainer">
+          <li class="navigationItem"> <a href="www.google.com"> About Me </a> </li>
+          <li class="navigationItem"> <a href="www.google.com"> Projects </a> </li>
+          <li class="navigationItem"> <a href="www.google.com"> Contact Me </a> </li><br/>
+          <li class="navigationItem"> <a href="www.google.com"> Blog </a> </li>
+          <li class="navigationItem"> <a href="www.google.com"> Archives </a> </li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="mobMenu" class="mobileHeader">
+      <img src="header.png" id="mobileHeaderImage" />
+      <button id="mobileHeader-button" onclick="showMobNavDraw()"> 
+        <img src="svgs/menuitems.svg" style="display:block; width: 60px; height: 60px; margin: 0px; padding: 0px;" />
+      </button>
+    </div>
+    <div id="navShade" class="hide navShadeA " onclick="showMobNavDraw()"></div>
+    <div id="mobNavDraw" class="hide removeStyling mobileHeader-container">
+      <div class="fade mobileHeaderItem"> <a href="https://www.google.com"> About Me </a> </div>
+      <div class="fade mobileHeaderItem"> <a href=""> Projects </a> </div>
+      <div class="fade mobileHeaderItem"> <a href=""> Contact Me </a> </div> <br>
+      <div class="fade mobileHeaderItem"> <a href=""> Blog </a> </div>
+      <div class="fade mobileHeaderItem"> <a href=""> Archives</a> </div>
+      <br />
+    </div>
+    <div class="sidebar-contentDiv"></div>
+
+
+    <div class="content">
+      <div id="centeredContent">
+          <img src="svgs/glasses.svg" class="heroImage" />
+
+          <h1 id="welcomer">Programmer, Student, Designer</h1>
+
+          <div id="blurb">A programmer at heart, I also enjoy building and designing websites, making small (and occasionally a bit too large) programs and messing about with stuff. Also run a blog with the occasional posts about technology in general, design and programming languages in particular</div>
+      </div>
+
+      <div id="skillsList">
+
+        <h2 class="subheading"> Skills </h2> <br />
+        <div id="lineBreak"></div>
+
+        <div class="circlePath">
+          <svg class="circleShape" style="width: 120px;height: 120px; background: rgba(0,0,0,0);">
+           <circle r="57" cx="60" cy="60" style="fill:rgba(0,0,0,0);stroke:#28cd91;stroke-width:4;stroke-dasharray: 275 360;" transform="rotate(-90 60 60)"/>
+            <image width="60" height="60" x="30" y="30" style="box-shadow: 0px 2px 7px 0px rgba(0,0,0,0.2);" xlink:href="svgs/skills/cpp.svg"/>
+           <circle r="57" cx="60" cy="60" style="fill:rgba(0,0,0,0);stroke:rgba(0,0,0,0.1);stroke-width:2;" />
+         </svg>
+        </div>
+
+        <div class="circlePath">
+          <svg class="circleShape" style="width: 120px;height: 120px; background: rgba(0,0,0,0);">
+           <circle r="57" cx="60" cy="60" style="fill:rgba(0,0,0,0);stroke:#ffc200;stroke-width:4;stroke-dasharray: 60 360;" transform="rotate(-90 60 60)"/>
+            <image width="60" height="60" x="30" y="30" style="box-shadow: 0px 2px 7px 0px rgba(0,0,0,0.2);" xlink:href="svgs/skills/js.svg"/>
+           <circle r="57" cx="60" cy="60" style="fill:rgba(0,0,0,0);stroke:rgba(0,0,0,0.1);stroke-width:2;" />
+         </svg>
+        </div>
+
+        <div class="circlePath">
+          <svg class="circleShape" style="width: 120px;height: 120px; background: rgba(0,0,0,0);">
+           <circle r="57" cx="60" cy="60" style="fill:rgba(0,0,0,0);stroke:#0086ff;stroke-width:4;stroke-dasharray: 290 360;" transform="rotate(-90 60 60)"/>
+            <image width="60" height="60" x="30" y="30" style="box-shadow: 0px 2px 7px 0px rgba(0,0,0,0.2);" xlink:href="svgs/skills/ps.svg"/>
+           <circle r="57" cx="60" cy="60" style="fill:rgba(0,0,0,0);stroke:rgba(0,0,0,0.1);stroke-width:2;" />
+         </svg>
+        </div>
+
+        <div class="circlePath">
+          <svg class="circleShape" style="width: 120px;height: 120px; background: rgba(0,0,0,0);">
+           <circle r="57" cx="60" cy="60" style="fill:rgba(0,0,0,0);stroke:#FF9800;stroke-width:4;stroke-dasharray: 250 360;" transform="rotate(-90 60 60)"/>
+            <image width="60" height="60" x="30" y="30" style="box-shadow: 0px 2px 7px 0px rgba(0,0,0,0.2);" xlink:href="svgs/skills/html.svg"/>
+           <circle r="57" cx="60" cy="60" style="fill:rgba(0,0,0,0);stroke:rgba(0,0,0,0.1);stroke-width:2;" />
+         </svg>
+        </div>
+
+        <div class="circlePath">
+          <svg class="circleShape" style="width: 120px;height: 120px; background: rgba(0,0,0,0);">
+           <circle r="57" cx="60" cy="60" style="fill:rgba(0,0,0,0);stroke:#00b1ff;stroke-width:4;stroke-dasharray: 220 360;" transform="rotate(-90 60 60)"/>
+            <image width="60" height="60" x="30" y="30" style="box-shadow: 0px 2px 7px 0px rgba(0,0,0,0.2);" xlink:href="svgs/skills/css.svg"/>
+           <circle r="57" cx="60" cy="60" style="fill:rgba(0,0,0,0);stroke:rgba(0,0,0,0.1);stroke-width:2;" />
+         </svg>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
 </body>
-</html>

@@ -1,0 +1,133 @@
+/*
+//   Fonts
+*/
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+/*
+//Hiding mobile only stuff
+*/
+.mHeader, .mNavigation {
+  display: none;
+}
+
+
+/*
+//   Body
+*/
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.bodyWrap {
+  max-width: 1700px;
+  min-width: 1024px;
+  margin: auto;
+  background-color: #000000;
+  font-family: 'Lato', sans-serif;
+}
+
+#headerImage {
+  width: 250px;
+}
+
+.mobileHeader, .navShadeA, .mobileHeader-container {
+  display: none;
+}
+
+.sidebar {
+  float: left;
+  position: fixed;
+  padding: 60px 0 0 160px;
+  margin: 0px;
+  height: 100vh;
+  background-color: #ffffff;
+  z-index: 5;
+  font-size: 14px;
+
+}
+
+.sidebar-contentDiv {
+  float: left;
+  position: fixed;
+  top: 10vh;
+  margin: 0 0 0 400px;
+  height: 80vh;
+  width: 1px;
+  background-color: rgba(0, 0, 0, 0.08);
+  z-index: 5;
+}
+
+.smallDivider {
+  background-color: rgba(0,0,0,0.1);
+  height:2px;
+  width: 100px;
+  margin: 15px 0 15px 15px;
+}
+
+.content {
+  float: left;
+  width: auto;
+  background-color: #ffffff;
+  margin: 10vh 0 0 20px;
+  padding: 0 150px 0 420px;
+  position: relative;
+/*  padding-top: 10vh;*/
+  z-index: 3;
+}
+
+/*
+//  Navigation
+*/
+
+ul.navigationContainer {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    /*color: #28cd91 !important;*/
+    /*font-family: 'Roboto Slab', sans-serif;*/
+    background-color: #ffffff;
+}
+
+li.navigationItem a{
+    display: block;
+    color: #28cd91;
+    width: 104.5%;
+    padding: 11px 16px;
+    text-decoration: none;
+    margin: 0;
+}
+
+li.navigationItem a:link a:visited {
+    color: #28cd91;
+}
+
+li.navigationItem a:hover {
+    background-color: #28cd91;
+    color: white;
+    text-decoration: none;
+}
+
+li.navigationItem a:active {
+    background-color: #12b076;
+    color: white;
+    text-decoration: none;
+}
+
+/*.sidebar {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  float: left;
+
+  width: 30%;
+  height: 100%;
+
+  background-color: #000000;
+  color: #ffffff;
+}*/
