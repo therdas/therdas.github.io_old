@@ -1,57 +1,61 @@
-#skillsList {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: center; 
-	align-content: space-around;
+.mobile-spacer {
+	display: block;
+	height: 100px;
 }
 
 #centeredContent {
+	align-content: space-around;
+	align-items: center;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	align-items: center;
-	align-content: space-around;
+}
+
+.heroImage {
+	margin: 0;
+	max-width: 1000px;
+	min-width: 270px;
+	padding: 0;
+	width: 40vw;
 }
 
 #welcomer {
+	border-bottom: 2px dotted rgba(0,0,0,0.1);
 	display: inline;
 	font: 50px "Oswald", sans-serif;
-	text-align: center;
-	border-bottom: 3px solid rgba(0,0,0,0.2);
 	margin-top: 0;
+	text-align: center;
 	text-transform: uppercase;
 }
 
 #blurb {
 	font: italic 18px lato,sans-serif;
-	padding: 0px 5vw 25px 5vw;
-	line-height: 150%;
 	letter-spacing: 0.2px;
+	line-height: 150%;
+	padding: 0px 5vw 25px 5vw;
 }
 
-.heroImage {
-	width: 40vw;
-	max-width: 1000px;
-	min-width: 270px;
-	margin: 0;
-	padding: 0;
+#skillsList {
+	align-content: space-around;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center; 
 }
+
 
 .subheading {
-	font: 13px lato,sans-serif;
+	border-bottom: 2px dotted rgba(0,0,0,0.1);
 	color: rgba(0,0,0,0.5);
 	font-weight: 700;
-	text-transform: uppercase;
-	text-align: center;
-	width: auto;
-	padding: 20px 20px 5px 20px;
+	font: 13px lato,sans-serif;
 	margin: auto;
-	border-bottom-style: solid;
-	border-width: 3px;
-	border-color: rgba(0,0,0,0.1);
+	padding: 20px 20px 5px 20px;
+	text-align: center;
+	text-transform: uppercase;
+	width: auto;
 }
 
-#lineBreak {
+.lineBreak {
 	width: 100%;
 }

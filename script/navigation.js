@@ -3,16 +3,16 @@ function fadedShow(item, n, baseTime) {
 }
 
 function showMobNavDraw() {
-	var drawer = document.getElementById("mobNavDraw");
-	var shade = document.getElementById("navShade");
-	var menu = document.getElementById("mobMenu");
-	var items = document.getElementsByClassName("mobileHeaderItem")
+	var drawer = document.getElementById("mobile-nav-drawer");
+	var shade = document.getElementById("nav-shade");
+	var menu = document.getElementById("mobile-menu");
+	var items = document.getElementsByClassName("mobile-header-item")
 	if(!drawer.classList.contains("hide")) {
 		drawer.classList.toggle("hide");
-		shade.classList.toggle("hide")
+		shade.classList.toggle("hide");
+		setTimeout(function(){menu.classList.toggle("remove-shadow-border");}, 300);
 		setTimeout(function(){
-			drawer.classList.toggle("removeStyling");
-			menu.classList.toggle("removeShadowBorder");
+			drawer.classList.toggle("remove-styling");
 			for (var i = 0; i < items.length; i++) {
 				fadedShow(items[i], i, 0);
 			}
@@ -23,7 +23,16 @@ function showMobNavDraw() {
 		for (var i = 0; i < items.length; i++) {
 			fadedShow(items[i], i, 100);
 		}
-		drawer.classList.toggle("removeStyling");
-	    menu.classList.toggle("removeShadowBorder");
+		drawer.classList.toggle("remove-styling");
+	    menu.classList.toggle("remove-shadow-border");
 	}
+}
+
+window.onscroll = function() {
+    var nav = document.getElementById('mobile-menu');
+    if ( window.pageYOffset > 150 ) {
+        nav.classList.remove('scroll-shadow-hide');
+    } else {
+        nav.classList.add('scroll-shadow-hide');
+    }
 }

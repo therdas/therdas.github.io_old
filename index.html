@@ -1,4 +1,5 @@
 <!doctype html>
+
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title> Template Page </title>
@@ -6,48 +7,58 @@
   <link rel="stylesheet" media="screen and (min-width: 800px)" href="css/generic.css">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/circle.css">
-  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700i,900&amp;subset=latin-ext" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Oswald:300" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://unpkg.com/simplebar@2.4.1/dist/simplebar.css" />
+  <script src="https://unpkg.com/simplebar@2.4.1/dist/simplebar.js"></script>
+
   <script src="script/navigation.js"></script>
   <script src="script/main.js"></script>
 </head>
+
+
 <body>
-  <div class="bodyWrap">
+  <div class="body-wrap">
+
+    <!-- Fullsized Sidebar -->
+
     <div class="sidebar">
-      <img src="header.png" id="headerImage" />
+      <img src="svgs/sidebar-main.svg" id="header-image" />
 
-      <div class="smallDivider"></div>
+      <div class="small-divider"></div>
 
-      <div class ="navigation">
-        <ul class="navigationContainer">
-          <li class="navigationItem"> <a href="www.google.com"> About Me </a> </li>
-          <li class="navigationItem"> <a href="www.google.com"> Projects </a> </li>
-          <li class="navigationItem"> <a href="www.google.com"> Contact Me </a> </li><br/>
-          <li class="navigationItem"> <a href="www.google.com"> Blog </a> </li>
-          <li class="navigationItem"> <a href="www.google.com"> Archives </a> </li>
+      <div class ="navigation" data-simplebar>
+        <ul class="navigation-container">
+          <li class="navigation-item"> <a href="www.google.com"> About Me </a> </li>
+          <li class="navigation-item"> <a href="www.google.com"> Projects </a> </li>
+          <li class="navigation-item"> <a href="www.google.com"> Contact Me </a> </li><br/>
+          <li class="navigation-item"> <a href="www.google.com"> Blog </a> </li>
+          <li class="navigation-item"> <a href="www.google.com"> Archives </a> </li>
         </ul>
       </div>
     </div>
 
-    <div id="mobMenu" class="mobileHeader">
-      <img src="header.png" id="mobileHeaderImage" />
-      <button id="mobileHeader-button" onclick="showMobNavDraw()"> 
+    <!-- Mobile Topbar -->
+
+    <div id="mobile-menu" class="mobile-header scroll-shadow-hide">
+      <img src="svgs/menubar-main.svg" id="mobile-header-image" />
+      <button id="mobile-header-button" onclick="showMobNavDraw()"> 
         <img src="svgs/menuitems.svg" style="display:block; width: 60px; height: 60px; margin: 0px; padding: 0px;" />
       </button>
     </div>
-    <div id="navShade" class="hide navShadeA " onclick="showMobNavDraw()"></div>
-    <div id="mobNavDraw" class="hide removeStyling mobileHeader-container">
-      <div class="fade mobileHeaderItem"> <a href="https://www.google.com"> About Me </a> </div>
-      <div class="fade mobileHeaderItem"> <a href=""> Projects </a> </div>
-      <div class="fade mobileHeaderItem"> <a href=""> Contact Me </a> </div> <br>
-      <div class="fade mobileHeaderItem"> <a href=""> Blog </a> </div>
-      <div class="fade mobileHeaderItem"> <a href=""> Archives</a> </div>
+    <div id="nav-shade" class="hide nav-shade" onclick="showMobNavDraw()"></div>
+    <div id="mobile-nav-drawer" class="hide remove-styling mobile-header-container">
+      <div class="fade mobile-header-item"> <a href="https://www.google.com"> About Me </a> </div>
+      <div class="fade mobile-header-item"> <a href=""> Projects </a> </div>
+      <div class="fade mobile-header-item"> <a href=""> Contact Me </a> </div> <br>
+      <div class="fade mobile-header-item"> <a href=""> Blog </a> </div>
+      <div class="fade mobile-header-item"> <a href=""> Archives</a> </div>
       <br />
     </div>
-    <div class="sidebar-contentDiv"></div>
 
+    <!-- Content -->
 
     <div class="content">
+      <div class="mobile-spacer mobile-content"></div>
       <div id="centeredContent">
           <img src="svgs/glasses.svg" class="heroImage" />
 
@@ -59,7 +70,7 @@
       <div id="skillsList">
 
         <h2 class="subheading"> Skills </h2> <br />
-        <div id="lineBreak"></div>
+        <div class="lineBreak"></div>
 
         <div class="circlePath">
           <svg class="circleShape" style="width: 120px;height: 120px; background: rgba(0,0,0,0);">
