@@ -124,16 +124,16 @@ html, body {
 
 .mobile-header-item a:hover {
   background-color: #28cd91;
-  color: white; 
+  color: rgba(0,0,0,0.8); 
 }
 
 .mobile-header-item a:link a:visited {
-  color: #212121;
+  color: rgba(0,0,0,0.6);
 }
 
 .mobile-header-item a:active {
   background-color: #12b076;
-  color: white;
+  color: rgba(0,0,0,0.8);
   text-decoration: none;
 }
 
