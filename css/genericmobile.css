@@ -112,7 +112,7 @@ html, body {
 }
 
 .mobile-header-item a{
-	color: #212121;
+	color: rgba(0,0,0,0.6);
 	display: block;
   font-weight: 900;
 	opacity: 1;
