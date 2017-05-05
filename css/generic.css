@@ -29,6 +29,17 @@ a:active {
   background-color: #0ca96f;
 }
 
+/*
+//  Clear Link Styles
+*/
+
+.clear-link-decorations:hover {
+  background-color: rgba(0,0,0,0) !important;
+}
+
+.clear-link-decorations:active {
+  background-color: rgba(0,0,0,0) !important;
+}
 
 /*
 //Hiding mobile only stuff
