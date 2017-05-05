@@ -1,0 +1,38 @@
+/*
+**  Fonts
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Lato');
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,400i,700i,900&amp;subset=latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Lato');
+@import url('https://fonts.googleapis.com/css?family=Oswald:300');
+
+/*
+**  Hide mobile-specific stuff
+*/
+
+.mHeader, .mNavigation {
+  display: none;
+}
+
+/*
+**	html, body and body-wrap
+*/
+
+body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.body-wrap {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  font-family: 'Lato', sans-serif;
+  height: 100%;
+  margin: auto;
+  overflow: hidden;
+}
+
