@@ -2,6 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://therdas.github.io/post/welcome/</loc>
+    <lastmod>2017-05-06T13:14:30+05:30</lastmod>
+  </url>
+  
+  <url>
     <loc>https://therdas.github.io/post/twelveth/</loc>
     <lastmod>2017-05-03T01:25:36+05:30</lastmod>
   </url>
@@ -57,11 +62,6 @@
   </url>
   
   <url>
-    <loc>https://therdas.github.io/post/welcome/</loc>
-    <lastmod>2017-05-02T23:45:17+05:30</lastmod>
-  </url>
-  
-  <url>
     <loc>https://therdas.github.io/post/first/</loc>
     <lastmod>2017-05-02T23:45:17+05:30</lastmod>
   </url>
@@ -82,13 +82,13 @@
   
   <url>
     <loc>https://therdas.github.io/</loc>
-    <lastmod>2017-05-03T01:25:36+05:30</lastmod>
+    <lastmod>2017-05-06T13:14:30+05:30</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://therdas.github.io/post/</loc>
-    <lastmod>2017-05-03T01:25:36+05:30</lastmod>
+    <lastmod>2017-05-06T13:14:30+05:30</lastmod>
     <priority>0</priority>
   </url>
   
@@ -105,7 +105,7 @@
   
   <url>
     <loc>https://therdas.github.io/tags/welcome/</loc>
-    <lastmod>2017-05-02T23:45:17+05:30</lastmod>
+    <lastmod>2017-05-06T13:14:30+05:30</lastmod>
     <priority>0</priority>
   </url>
   
