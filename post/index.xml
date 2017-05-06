@@ -113,6 +113,21 @@
     </item>
     
     <item>
+      <title>Welcome to the blog!</title>
+      <link>https://therdas.github.io/post/welcome/</link>
+      <pubDate>Tue, 02 May 2017 23:45:17 +0530</pubDate>
+      
+      <guid>https://therdas.github.io/post/welcome/</guid>
+      <description>&lt;p&gt;So.
+Another blog, eh? Well, this is &lt;em&gt;another&lt;/em&gt; blog. Mostly about tech, programming, (ramblings about) design, and other stuff. I&amp;rsquo;ll be using this as a sort of log while I&amp;rsquo;m learning new stuff.&lt;/p&gt;
+
+&lt;p&gt;I think the first series might just be about how I made this blog using Hugo and CSS3 flex-boxes. (yes, most of this site is flex-box. Sorry ie(&amp;lt;10) users. If you can even read this that is)&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;m just a amateur programmer and dabbler at design, who has yet got a lot to learn, from Kolkata. I hope you&amp;rsquo;ll strap along for the ride as well!&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>first</title>
       <link>https://therdas.github.io/post/first/</link>
       <pubDate>Tue, 02 May 2017 23:45:17 +0530</pubDate>
