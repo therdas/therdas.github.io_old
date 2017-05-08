@@ -1,0 +1,37 @@
+#title {
+  font: 45px 'Oswald',serif;
+  color: rgba(0,0,0,0.8);
+}
+
+#title:before {
+	content:'§\00a0';
+	color: rgba(0,0,0,0.2);
+}
+
+#inactive-title > a {
+	font: 45px 'Oswald',serif;
+    color: rgba(0,0,0,0.2);
+}
+
+#inactive-title > a:before {
+	content:'§\00a0';
+	color: rgba(0,0,0,0);
+}
+
+.tagname{
+	display: block;
+	float: left;
+	width: 33%;
+	min-width: 200px;
+	padding: 10px;
+	box-sizing: border-box;
+}
+
+.tag-count {
+	color: rgba(0,0,0,0.8);
+	border: 1px solid rgba(0,0,0,0.2);
+	padding: 2px 6px;
+	border-radius: 50%;
+	font-weight: 700;
+	font-size: 12px;
+}
