@@ -88,6 +88,7 @@
 	display: flex;
 	flex-direction: row;
 	margin-bottom: 20px;
+	font-family: "Lato", sans-serif;
 }
 
 .list-button {

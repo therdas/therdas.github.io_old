@@ -18,6 +18,16 @@
 	color: rgba(0,0,0,0);
 }
 
+#inactive-title > a:hover {
+	background-color: rgba(0,0,0,0);
+	color: rgba(18, 176, 118, 0.6);
+}
+
+#inactive-title > a:active {
+	background-color: rgba(0,0,0,0);
+	color: rgba(18, 176, 118, 1);
+}
+
 .tagname{
 	display: block;
 	float: left;

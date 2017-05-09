@@ -166,50 +166,19 @@ Nam a pulvinar lacus, porta gravida lacus. Donec gravida enim luctus dui cursus 
     </item>
     
     <item>
-      <title>Example Project One</title>
-      <link>https://therdas.github.io/project/exampleProjectOne/</link>
-      <pubDate>Sun, 05 Mar 2017 00:00:00 +0000</pubDate>
+      <title>elite Concept</title>
+      <link>https://therdas.github.io/project/exampleProjectThree/</link>
+      <pubDate>Tue, 07 Mar 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://therdas.github.io/project/exampleProjectOne/</guid>
-      <description>
-
-&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pretium vel lacus eu venenatis. Pellentesque eleifend sodales metus, ac sagittis dolor sodales et. Nulla semper enim sed felis pellentesque, quis posuere felis luctus. Quisque consectetur dolor orci, sed viverra odio maximus eget. Fusce porttitor odio in est luctus, ut rhoncus nisl euismod. Nunc non quam quis nibh laoreet congue. Nulla at neque tincidunt, laoreet odio ac, sodales eros. Praesent sed ipsum justo. Fusce vitae rutrum magna. Mauris ut eros metus. Integer ac nulla sed sapien accumsan cursus id nec erat. Cras lectus augue, pulvinar vel felis accumsan, pretium ornare tellus. Nam a pulvinar lacus, porta gravida lacus. Donec gravida enim luctus dui cursus malesuada.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://therdas.github.io/project-images/kite-flying-in-sky.jpg&#34; alt=&#34;Example Image&#34; /&gt;&lt;/p&gt;
-
-&lt;h1 id=&#34;hello&#34;&gt;Hello&lt;/h1&gt;
-
-&lt;p&gt;Integer ac nulla sed sapien accumsan cursus id nec erat. Cras lectus augue, pulvinar vel felis accumsan, pretium ornare tellus. Nam a pulvinar lacus, porta gravida lacus. Donec gravida enim luctus dui cursus malesuada.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://therdas.github.io/project-images/kite-flying-in-sky.jpg&#34; alt=&#34;Example Image&#34; /&gt;
-&lt;span class=&#34;attr&#34;&gt;description of image&lt;/span&gt;
-&lt;img src=&#34;https://therdas.github.io/project-images/kite-flying-in-sky.jpg&#34; alt=&#34;Example Image&#34; /&gt;
-&lt;span class=&#34;attr&#34;&gt;description of image&lt;/span&gt;&lt;/p&gt;
-
-&lt;h1 id=&#34;hello-1&#34;&gt;Hello&lt;/h1&gt;
-
-&lt;p&gt;Integer ac nulla sed sapien accumsan cursus id nec erat. Cras lectus augue, pulvinar vel felis accumsan, pretium ornare tellus. Nam a pulvinar lacus, porta gravida lacus. Donec gravida enim luctus dui cursus malesuada.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://therdas.github.io/project-images/kite-flying-in-sky.jpg&#34; alt=&#34;Example Image&#34; /&gt;
-&lt;span class=&#34;attr&#34;&gt;description of image&lt;/span&gt;&lt;/p&gt;
-
-&lt;h1 id=&#34;hello-2&#34;&gt;Hello&lt;/h1&gt;
-
-&lt;p&gt;Integer ac nulla sed sapien accumsan cursus id nec erat. Cras lectus augue, pulvinar vel felis accumsan, pretium ornare tellus. Nam a pulvinar lacus, porta gravida lacus. Donec gravida enim luctus dui cursus malesuada.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://therdas.github.io/project-images/kite-flying-in-sky.jpg&#34; alt=&#34;Example Image&#34; /&gt;
-&lt;span class=&#34;attr&#34;&gt;description of image&lt;/span&gt;&lt;/p&gt;
-
-&lt;h1 id=&#34;hello-3&#34;&gt;Hello&lt;/h1&gt;
-
-&lt;p&gt;Integer ac nulla sed sapien accumsan cursus id nec erat. Cras lectus augue, pulvinar vel felis accumsan, pretium ornare tellus. Nam a pulvinar lacus, porta gravida lacus. Donec gravida enim luctus dui cursus malesuada.&lt;/p&gt;
+      <guid>https://therdas.github.io/project/exampleProjectThree/</guid>
+      <description>&lt;p&gt;Projects!&lt;/p&gt;
 </description>
     </item>
     
     <item>
-      <title>Example Project Two</title>
+      <title>Buttoned Up</title>
       <link>https://therdas.github.io/project/exampleProjectTwo/</link>
-      <pubDate>Sun, 05 Mar 2017 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 06 Mar 2017 00:00:00 +0000</pubDate>
       
       <guid>https://therdas.github.io/project/exampleProjectTwo/</guid>
       <description>&lt;p&gt;Projects!&lt;/p&gt;

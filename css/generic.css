@@ -2,8 +2,9 @@
 //   Fonts
 */
 
-@import url('https://fonts.googleapis.com/css?family=Lato:300,400,400i,700,900&amp;subset=latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700,900');
 @import url('https://fonts.googleapis.com/css?family=Oswald:300');
+@import url('https://fonts.googleapis.com/css?family=Merriweather:300,300i,700');
 
 
 /*
@@ -63,13 +64,14 @@ body, html {
   margin: 0;
   padding: 0;
   width: 100%;
+  font-family: "Merriweather", serif;
 }
 
 .body-wrap {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  font-family: 'Lato', sans-serif;
+  font-family: "Merriweather", serif;
   height: 100%;
   margin: auto;
   overflow: hidden;
@@ -87,6 +89,7 @@ body, html {
   border-right: 1px solid;
   display: flex;
   flex-direction: column;
+  font-family: "Lato", sans-serif;
   font-size: 14px;
   height: 100%;
   justify-content: center;

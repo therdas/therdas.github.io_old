@@ -67,12 +67,27 @@
   </url>
   
   <url>
-    <loc>https://therdas.github.io/project/exampleProjectOne/</loc>
-    <lastmod>2017-03-05T00:00:00+00:00</lastmod>
+    <loc>https://therdas.github.io/project/exampleProjectThree/</loc>
+    <lastmod>2017-03-07T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://therdas.github.io/project/exampleProjectTwo/</loc>
+    <lastmod>2017-03-06T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://therdas.github.io/project/fifth/</loc>
+    <lastmod>2017-03-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://therdas.github.io/project/fourth/</loc>
+    <lastmod>2017-03-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://therdas.github.io/project/exampleProjectOne/</loc>
     <lastmod>2017-03-05T00:00:00+00:00</lastmod>
   </url>
   
@@ -124,7 +139,7 @@
   
   <url>
     <loc>https://therdas.github.io/project/</loc>
-    <lastmod>2017-03-05T00:00:00+00:00</lastmod>
+    <lastmod>2017-03-07T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

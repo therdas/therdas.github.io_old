@@ -61,6 +61,41 @@
 	padding: 15px;
 }
 
+.list-nav-button {
+	display: flex;
+	flex-direction: row;
+	margin-bottom: 20px;
+	font-family: "Lato", sans-serif;
+}
+
+.list-button {
+	display: block;
+	padding: 10px;
+	border-radius: 3px;
+	transition: all 0.1s linear;
+	border: 2px solid #12b076;
+	font-weight: 700;
+}
+
+.list-button:hover {
+	background-color: #12b076;
+	color: #fff;
+	box-sizing: border-box;
+	transition: all 0.1s linear;
+}
+
+.list-button:active {
+	background-color: #12b076;
+	color: #fff;
+	box-sizing: border-box;
+	transition: all 0.1s linear;
+	box-shadow: 0px 3px 8px rgba(0,0,0,0.4);
+}
+
+.lb-next {
+	margin-left: auto;
+}
+
 @media all and (max-width: 585px) {
     
 .project-details{

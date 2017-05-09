@@ -29,7 +29,7 @@
 }
 
 #blurb {
-	font: italic 18px lato,sans-serif;
+	font: italic 16px "Merriweather",sans-serif;
 	letter-spacing: 0.2px;
 	line-height: 150%;
 	padding: 0px 5vw 25px 5vw;
@@ -48,7 +48,7 @@
 	border-bottom: 2px dotted rgba(0,0,0,0.1);
 	color: rgba(0,0,0,0.5);
 	font-weight: 700;
-	font: 13px lato,sans-serif;
+	font: 13px "lato",sans-serif;
 	margin: auto;
 	padding: 20px 20px 5px 20px;
 	text-align: center;
@@ -80,29 +80,45 @@
 	box-shadow: 0 4px 5px rgba(0,0,0,0.2);
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
+	justify-content: flex-start;
+	align-items: center;
 	margin: 20px 10px;
 }
 
-.project-image {
+.imageholder {
+	width: 230px;
+	height: 230px;
 	border-top-left-radius: 4px;
 	border-top-right-radius: 4px;
+	overflow: hidden;
+}
+
+.project-image {
+	display: block;
+	width: 700px;
+	height: auto;
 }
 
 .project-title {
-	font-weight: 900;
+	font-weight: 900 !important;
 	color: rgba(0,0,0,0.6);
-	font-size: 16px;
+	font: 15px "Lato", sans-serif;
 	margin: 15px;
 }
 
 .project-description {
 	width: 190px;
 	margin: 0 15px;
+	font: 0.9em "Merriweather",sans-serif;
 }
 
 a.see-more{
-	padding: 15px 0;
+	padding: 15px;
+	display: block;
+	width: 100%;
+	box-sizing: border-box;
+	text-align: center;
+	margin-top: auto;
 }
 
 #project-showallbutton {
@@ -110,6 +126,7 @@ a.see-more{
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
+	font-family: "Lato", serif;
 }
 
 #project-showallbutton a{
