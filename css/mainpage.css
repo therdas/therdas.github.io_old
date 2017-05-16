@@ -24,7 +24,7 @@
 	max-width: 1000px;
 	min-width: 270px;
 	padding: 0;
-	width: 40vw;
+	width: 40%;
 }
 
 #welcomer {
@@ -42,7 +42,7 @@
 	letter-spacing: 0.2px;
 	line-height: 150%;
 	margin-bottom: 15px;
-	padding: 0px 5vw 10px 5vw;
+	padding: 0 5% 10px 5%;
 }
 
 #skillsList {
