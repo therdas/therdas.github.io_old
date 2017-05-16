@@ -31,7 +31,8 @@
 	color: rgba(255,255,255,1) !important;
 	display: inline-block;
 	font-weight: 700;
-	font: 16px 'Bitter',serif;
+	font-size: 16px;
+	font-family: 'Bitter',serif;
 	margin-bottom: 5px;
 	text-transform: uppercase;
 }
@@ -50,7 +51,8 @@
 	border-bottom: 2px solid rgba(0,0,0,0);
 	display: inline-block;
 	font-weight: 700;
-	font: 14px 'Bitter', serif;
+	font-size: 14px;
+	font-family: 'Bitter', serif;
 	margin-top: 10px;
 	text-transform: uppercase;
 	-webkit-transition: all 0.05s linear;

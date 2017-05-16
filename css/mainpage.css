@@ -138,7 +138,7 @@
 .project-title {
 	color: rgba(0,0,0,0.6);
 	font-weight: 700 !important;
-	font: 15px "Bitter", serif;
+	font-family: "Bitter", serif; font-size:15px;
 	margin: 15px;
 }
 
@@ -167,7 +167,7 @@ a.see-more{
 	-webkit-box-direction: normal;
 	    -ms-flex-direction: row;
 	        flex-direction: row;
-	font: 15px "Bitter", serif;
+	font-family: "Bitter", serif; font-size:15px;
 	-webkit-box-pack: center;
 	    -ms-flex-pack: center;
 	        justify-content: center;

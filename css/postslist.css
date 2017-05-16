@@ -37,7 +37,8 @@
 	color: rgba(0,0,0,0.75);
 	display: inline-block;
 	font-weight: 700;
-	font: 18px 'Bitter',serif;
+	font-family: 'Bitter', serif;
+	font-size:15px;
 	text-shadow: -2px -2px white, -2px 2px white, 2px -2px white, 2px 2px white;
 	text-transform: uppercase;
 }
@@ -87,7 +88,8 @@
 	border-bottom: 2px solid rgba(0,0,0,0);
 	display: inline-block;
 	font-weight: 700;
-	font: 14px 'Bitter', serif;
+	font-size: 14px;
+	font-family: 'Bitter', serif;
 	margin-top: 10px;
 	text-transform: uppercase;
 	-webkit-transition: all 0.05s linear;

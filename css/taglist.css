@@ -1,7 +1,8 @@
 #title {
   color: rgba(0,0,0,0.8);
   font-weight: 700;
-  font: 18px 'Bitter',serif;
+  font-size: 18px;
+  font-family: 'Bitter',serif;
   text-transform: uppercase;
 }
 
@@ -17,7 +18,8 @@
 #inactive-title > a {
     color: rgba(0,0,0,0.2);
   font-weight: 700;
-  font: 18px 'Bitter',serif;
+  font-size: 18px;
+  font-family: 'Bitter',serif;
   text-transform: uppercase;
 }
 
