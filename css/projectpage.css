@@ -141,7 +141,11 @@
 }
 
 @media all and (min-width: 586px) {
-    
+
+.content {
+	padding-top: 80px;
+}
+
 .project-details {
 	padding: 20px 20%;
 }

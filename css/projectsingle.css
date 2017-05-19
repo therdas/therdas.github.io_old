@@ -1,9 +1,10 @@
-.attr {
+.alt {
 	color: rgba(0,0,0,0.6);
 	display: block;
 	font-style: italic;
 	text-align: center;
 }
+
 .title {
   color: rgba(0,0,0,0.8);
   font-weight: 700;

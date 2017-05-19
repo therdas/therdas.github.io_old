@@ -1,0 +1,223 @@
+#header {
+  color: rgba(0,0,0,0.8);
+  font-weight: 700;
+  font-size: 18px;
+  font-family: 'Bitter',serif;
+  text-transform: uppercase;
+  margin-top: 35px;
+  margin-bottom: 15px;
+}
+
+#header:before {
+	color: rgba(0,0,0,0.2);
+	content:'§\00a0';
+}
+
+#contact-social {
+	display: block;
+	margin-top: 30px;
+}
+
+.content-block {
+	display: inline-block;
+	margin: 20px 0 15px 0;
+}
+
+#contact-social > a {
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+  color: rgba(0,0,0,0.8);
+  font-family: 'Bitter',serif;
+  padding: 10px 15px;
+  margin: 5px 0 5px 0;
+  display: inline-block;
+  transition: all 0.05s linear;
+}
+
+#contact-social > a:hover {
+  border-radius: 2px;
+  transition: all 0.05s linear;
+}
+
+#so-github {
+	border-bottom-color: #4078c0;
+}
+
+#so-github:hover {
+	background-color: #4078c0;
+	color: #fff;
+}
+
+#so-tumblr {
+	border-bottom-color: #36465D;
+}
+
+#so-tumblr:hover {
+	background-color: #36465D;
+	color: #fff;
+}
+
+#so-twitter {
+	border-bottom-color: #0084B4;
+}
+
+#so-twitter:hover {
+	background-color: #0084B4;
+	color: #fff;
+}
+
+#so-da {
+	border-bottom-color: #4A584A;
+}
+
+#so-da:hover {
+	background-color: #4A584A;
+	color: #fff;
+}
+
+#so-mail {
+	border-bottom-color: rgba(0,0,0,0.8);
+}
+
+#so-mail:hover {
+	background-color: rgba(0,0,0,0.8);
+	border-bottom-color: rgba(0,0,0,0);
+	color: #fff;
+}
+
+.subheading {
+  color: rgba(0,0,0,0.6);
+  font-weight: 700;
+  font-size: 15px;
+  font-family: 'Bitter',serif;
+  text-transform: uppercase;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border-bottom: 2px solid rgba(0,0,0,0.1);
+  padding-bottom: 3px;
+  margin-bottom: 0.3em;
+  display: inline-block;
+}
+
+#welcomer-blurb {
+	display: inline-block;
+	margin-bottom: 2em;
+}
+
+#social-blurb{
+	display: inline-block;
+	margin-bottom: 15px;
+}
+
+#co-form-container {
+	display: block;
+	width: 100%;
+	text-align: center;
+	margin-bottom: 45px;
+}
+
+#contact-form {
+	display: inline-block;
+	width: 610px;
+	max-width: 100%;
+	text-align: left;
+	transition: all 0.1s linear;
+}
+
+#co-form-name{
+	width: 300px;
+	max-width: 100%;
+	padding: 10px;
+	font: 15px'Bitter', serif;
+	margin-right: 5px;
+	margin-bottom: 5px;
+	border: 2px solid rgba(0,0,0,0.1);
+	border-radius: 4px;
+	display: inline-block;
+	box-sizing: border-box;
+	transition: all 0.1s linear;
+}
+
+#co-form-email {
+	width: 300px;
+	max-width: 100%;
+	padding: 10px;
+	margin-bottom: 5px;
+	font: 15px'Bitter', serif;
+	border: 2px solid rgba(0,0,0,0.1);
+	border-radius: 4px;
+	display: inline-block;
+	box-sizing: border-box;
+	transition: all 0.1s linear;
+}
+
+#co-form-message {
+	width: 100%;
+	max-width: 100%;
+	padding: 10px;
+	font: 15px'Bitter', serif;
+	margin-top: 5px;
+	margin-bottom: 10px;
+	border: 2px solid rgba(0,0,0,0.1);
+	border-radius: 4px;
+	display: inline-block;
+	box-sizing: border-box;
+	transition: all 0.1s linear;
+	height: 200px;
+}
+
+#co-form-name:hover, #co-form-email:hover, #co-form-message:hover,
+#co-form-name:focus, #co-form-email:focus, #co-form-message:focus,
+#co-form-name:active, #co-form-email:active, #co-form-message:active {
+	outline: 0;
+	border-color: #0ca96f;
+	transition: all 0.1s linear;
+}
+
+#co-form-submit {
+	padding: 10px;
+	font-size: 13px;
+	font-family: 'Bitter', serif;
+	font-weight: 700;
+	text-transform: uppercase;
+	width: 100%;
+	box-sizing: border-box;
+	border: 2px solid rgba(0,0,0,0.1);
+	background-color: rgba(0,0,0,0.1);
+	border-radius: 4px;
+	transition: all 0.05s linear;
+}
+
+#co-form-submit:hover, #co-form-submit:focus {
+	outline: 0;
+	border-color: rgba(0,0,0,0) !important;
+	background-color: #0ca96f;
+	color: #fff;
+	box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+	transition: all 0.05s linear;
+}
+
+#co-form-submit:active{
+	background-color: #0ca96f;
+	color: #fff;
+	box-shadow: 0 3px 10px rgba(0,0,0,0.5);
+	transition: all 0.05s linear;
+}
+
+#submitted{
+	display: inline-block;
+	width: 100%;
+	min-width: 200px;
+	padding: 10px;
+	margin: 30px 0 0 0; 
+	border: 2px solid rgba(0,0,0,0.2);
+	border-radius: 4px;
+	text-align: center;
+	transition: all 0.1s linear;
+	box-sizing: border-box;
+}
+
+.hidden {
+	display: none !important;
+	transition: all 0.1s linear;
+}

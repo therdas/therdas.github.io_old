@@ -1,3 +1,10 @@
+.alt {
+	color: rgba(0,0,0,0.6);
+	display: block;
+	font-style: italic;
+	text-align: center;
+}
+
 .title {
   color: rgba(0,0,0,0.8);
   font-weight: 700;
@@ -72,7 +79,8 @@
 	border-bottom: 1px solid rgba(0,0,0,0.1);
 	color: rgba(0,0,0,0.8);
 	font-weight: 700;
-	font: 13px 'Bitter', serif;
+	font-size: 13px;
+	font-family: 'Bitter', serif;
 	padding: 10px 15px;
 }
 
@@ -158,7 +166,9 @@
 .pn-post-header {
 	color: rgba(0,0,0,0.8);
 	font-weight: 700;
-	font: 15px "Bitter",serif;
+	font-size: 15px;
+	font-family: "Bitter",serif;
+	font-weight: 700;
 	text-transform: uppercase;
 }
 

@@ -9,6 +9,16 @@
 		<link rel="stylesheet" href="https://unpkg.com/simplebar@2.4.1/dist/simplebar.css" />
 		<script src="https://unpkg.com/simplebar@2.4.1/dist/simplebar.js"></script>
 		<script src=" https://therdas.github.io/js/navigation.js"></script>
+<meta name="description" content="All the ways and then some more to reach out to me. therdas: A full-time student, hobbyist programmer, amateur designer and tech enthusiast" />
+<script type="text/javascript">
+	function formSubmitted () {
+		var ele = document.getElementById("submitted"); 
+		var form = document.getElementById("contact-form");
+		ele.classList.remove("hidden");
+	}
+</script>
+		<link rel="stylesheet" href=" https://therdas.github.io/css/contact.css">
+	</head>
 
 
 <body>
@@ -43,7 +53,7 @@
     
 
     <div id="mobile-menu" class="mobile-header scroll-shadow-hide">
-      <img src="https://therdas.github.io/svg/menubar-main.svg" id="mobile-header-image" />
+      <a href="https://therdas.github.io/"><img src="https://therdas.github.io/svg/menubar-main.svg" id="mobile-header-image" /></a>
       <button id="mobile-header-button" onclick="showMobNavDraw()"> 
         <img src="https://therdas.github.io/svg/menuitems.svg" style="display:block; width: 60px; height: 60px; margin: 0px; padding: 0px;" />
       </button>
@@ -64,25 +74,30 @@
     
 
     <div class="content">
-  <h1>Contact Me</h1>
-  <p>YADDA</p>
-  <p>Hello!</p>
+  <div id='header'>Contact Me</div>
+  <span class="subheading">Leave a Message</span><br/>
+  <span id="welcomer-blurb">Leave a message down below and I'll be sure to reply you as soon as possible at your e-mail address</span>
+    <div id='co-form-container'>
+  	<form name='contactform' id='contact-form' enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSevZtgSQ45VoEuxpIsuosKMg5YicahfayfY115GUj4dIc3afg/formResponse?" target="hidden_iframe" onsubmit='formSubmitted();'>
+  		<input id="co-form-name" type="text" name="entry.1576851923" placeholder="Name" required/>
+  		<input id="co-form-email"type="email" name="entry.811594313" placeholder="E-Mail" required/> <br/>
+  		<textarea id="co-form-message" name="entry.22520638" placeholder="Enter your message" required/></textarea><br/>
+  		<input id="co-form-submit" type="submit" value="Submit" />
+  		<div id="submitted" class="hidden">Your response was submitted!</div>
+ 	 </form>
+  </div>
+  <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
 
-  <div id="disqus_thread"></div>
-<script type="text/javascript">
-    var disqus_shortname = 'therdas';
-    var disqus_identifier = 'https:\/\/therdas.github.io\/contact-me\/';
-    var disqus_title = 'Contact Me';
-    var disqus_url = 'https:\/\/therdas.github.io\/contact-me\/';
-
-    (function() {
-        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-    })();
-</script>
-<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+  
+  <div id='contact-social'>
+  	<span class="subheading">Other Social Media</span><br/>
+ 	<span id="social-blurb">You can easily find me at these places as well</span><br/>
+  	<a href='https://github.com/therdas/' id='so-github'> therdas @ Github </a>
+  	<a href='https://thatsuredidntwork.tumblr.com/' id='so-tumblr'> thatsuredidntwork @ tumblr </a>
+  	<a href='https://twitter.com/@therdas' id='so-twitter'> therdas @ twitter </a>
+  	<a href='https://rdtsod.deviantart.com/' id='so-da'> rdtsod @ deviantART </a>
+  	<a href='mailto:therealrdas@gmail.com' id='so-mail'> mail</a>
+  </div>
 
 		</div>
 		</div>

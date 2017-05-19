@@ -78,3 +78,11 @@
 	-webkit-transition: all 0.1s linear;
 	transition: all 0.1s linear;
 }
+
+@media all and (min-width: 586px) {
+
+.content {
+	padding-top: 80px;
+}
+
+}

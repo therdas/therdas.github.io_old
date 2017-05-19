@@ -149,10 +149,12 @@ li.social-media a{
 
 li.social-media a>img{
   opacity: 0.6;
+  transition: opacity 0.1s linear;
 }
 
 li.social-media a:hover>img {
   opacity: 0.8;
+  transition: opacity 0.1s linear;
 }
 
 .social-media {
@@ -178,23 +180,26 @@ li.navigation-item a{
   font-weight: 900;
   margin: 0;
   padding: 11px 16px;
-  border-style: none;
+  transition: all 0.07s linear;
 }
 
 li.navigation-item a:link a:visited {
   color: rgba(0,0,0,0.6);
+  transition: all 0.07s linear;
 }
 
 li.navigation-item a:hover {
   background-color: #28cd91;
   color: rgba(0,0,0,0.8);
   text-decoration: none;
+  transition: all 0.07s linear;
 }
 
 li.navigation-item a:active {
   background-color: #12b076;
   color: rgba(0,0,0,0.8);
   text-decoration: none;
+  transition: all 0.07s linear;
 }
 
 /*
