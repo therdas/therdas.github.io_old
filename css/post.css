@@ -349,6 +349,7 @@ blockquote > p {
 
 .pre-summary-series {
 	width: 53%;
+	line-height: 1.5em;
 }
 
 .series {
