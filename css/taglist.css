@@ -1,88 +1,123 @@
-#title {
-  color: rgba(0,0,0,0.8);
-  font-weight: 700;
-  font-size: 18px;
-  font-family: 'Bitter',serif;
-  text-transform: uppercase;
+/*
+** For Archives
+*/
+
+h2 {
+	color: rgba(0,0,0,0.8);
+	display: block;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 2.6em;
+	font-weight: 600;
+	line-height: 0.97em;
+	margin: 0 auto 0.1em auto;
+	padding: 0;
+	text-align: center;
+	width: 53%;
 }
 
-#title:before {
-	color: rgba(0,0,0,0.2);
-	content:'§\00a0';
+#body-wrap {
+	display: block;
+	margin-top: 150px;
+	width: 50%;
 }
 
-#tag-nav-container {
-	padding: 8px 10px;
+#body-wrap > div {
+	padding: 1em;
+	text-align: center;
+	width: 100%;
+} 
+
+/*
+** Type
+*/
+
+#type:before {
+	content: 'Show posts grouped by: '
 }
 
-#inactive-title > a {
-    color: rgba(0,0,0,0.2);
-  font-weight: 700;
-  font-size: 18px;
-  font-family: 'Bitter',serif;
-  text-transform: uppercase;
-}
-
-#inactive-title > a:before {
-	color: rgba(0,0,0,0);
-	content:'§\00a0';
-}
-
-#inactive-title > a:hover {
-	background-color: rgba(0,0,0,0);
-	color: rgba(18, 176, 118, 0.8);
-}
-
-#inactive-title > a:active {
-	background-color: rgba(0,0,0,0);
-	color: rgba(18, 176, 118, 1);
-}
-
-.tagname{
-	border-bottom: 2px solid rgba(18, 176, 118,0);
+#type {
 	-webkit-box-sizing: border-box;
 	        box-sizing: border-box;
-	color: rgba(0,0,0,0.8) !important;
-	display: block;
-	float: left;
-	min-width: 200px;
-	padding: 10px;
-	-webkit-transition: all 0.1s linear;
-	transition: all 0.1s linear;
-	width: 33%;
 }
 
-.tagname:hover {
-	background-color: rgba(0,0,0,0);
-	border-bottom: 2px solid rgb(18, 176, 118);
-	color: rgb(18, 176, 118) !important;
-	-webkit-transition: all 0.1s linear;
-	transition: all 0.1s linear;
-}
-
-.tag-count {
-	border-radius: 500px;
-	border: 1px solid rgba(0,0,0,0.2);
-	color: rgba(0,0,0,0.7);
-	font-size: 12px;
+#type > span, #type > a {
+	display: inline-block;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 0.8em;
+	font-style: normal;
 	font-weight: 700;
-	padding: 4px 10px;
-	-webkit-transition: all 0.1s linear;
-	transition: all 0.1s linear;
+	margin: 0;
+	padding: 10px;
+	text-transform: uppercase;
 }
 
-.tagname:hover > .tag-count {
-	background-color: rgb(18, 176, 118);
-	border: 1px solid rgba(0,0,0,0);
-	color: rgba(0,0,0,1);
-	-webkit-transition: all 0.1s linear;
-	transition: all 0.1s linear;
+.inactive-type, .active-type {
+	border: 2px solid rgba(0,0,0,0.8);
 }
 
-@media all and (min-width: 586px) {
-
-.content {
-	padding-top: 80px;
+.active-type {
+	background-color: rgba(0,0,0,0.8);
+	border: none;
+	color: white;
+	padding: 12px !important;
 }
 
+.next-type {
+	border-bottom-right-radius: 3px;
+	border-top-right-radius: 3px;
+}
+
+.prev-type {
+	border-bottom-left-radius: 3px;
+	border-top-left-radius: 3px;
+}
+
+/*
+**	Items
+*/
+
+.items > a {
+	border-radius: 2px;
+	border: none;
+	display: block;
+	font-style: normal;
+	padding: 7px;
+	text-transform: capitalize;
+}
+
+.items > a > span {
+	color: rgba(0,0,0,0.8);
+	font-weight: 700;
+	padding-left: 5px;
+	padding-right: 1em;
+}
+
+/*---------------------------*/
+/* Optimization for Mobile   */
+/*---------------------------*/
+
+@media all and (max-width: 800px) {
+	#body-wrap {
+		width: 70%;
+	}
+
+	#type:before {
+		content: 'Show articles by';
+		display: block;
+		margin-bottom: 0.5em;
+	}
+
+	#type {
+		display: block;
+	}
+}
+
+@media all and (max-width: 500px) {
+	#body-wrap {
+		width: 85%;
+	}
+
+	h2 {
+		font-size: 2em;
+	}
 }
