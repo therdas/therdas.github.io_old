@@ -4,11 +4,9 @@
 	<head>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title> Contact Me :: rd </title>
-		<link rel="stylesheet" media="screen and (max-width: 800px)" href="https://therdas.github.io/css/genericmobile.css">
-		<link rel="stylesheet" media="screen and (min-width: 800px)" href="https://therdas.github.io/css/generic.css">
-		<link rel="stylesheet" href="https://unpkg.com/simplebar@2.4.1/dist/simplebar.css" />
-		<script src="https://unpkg.com/simplebar@2.4.1/dist/simplebar.js"></script>
+		<link rel="stylesheet" media="screen and (max-width: 800px)" href="https://therdas.github.io/css/generic.css">
 		<script src=" https://therdas.github.io/js/navigation.js"></script>
+
 <meta name="description" content="All the ways and then some more to reach out to me. therdas: A full-time student, hobbyist programmer, amateur designer and tech enthusiast" />
 <script type="text/javascript">
 	function formSubmitted () {
@@ -17,66 +15,31 @@
 		ele.classList.remove("hidden");
 	}
 </script>
-		<link rel="stylesheet" href=" https://therdas.github.io/css/contact.css">
+
+    <link rel="stylesheet" href="https://therdas.github.io/css/generic.css">
+    <link rel="stylesheet" href="https://therdas.github.io/css/contact.css">
+
 	</head>
-
-
 <body>
-  <div class="body-wrap">
-
-    
-
-    <div class="sidebar">
-      <div id="nav-wrap"  data-simplebar>
-      <a href="https://therdas.github.io/" class="clear-link-decorations"> <img src="https://therdas.github.io/svg/sidebar-main.svg" id="header-image" /> </a>
-
-      <div class="small-divider"></div>
-
-      <div class ="navigation">
-        <ul class="navigation-container">
-          <li class="navigation-item"> <a href="https://therdas.github.io/"> About Me </a> </li>
-          <li class="navigation-item"> <a href="https://therdas.github.io/project"> Projects </a> </li>
-          <li class="navigation-item"> <a href="https://therdas.github.io/contact-me"> Contact Me </a> </li><br/>
-          <li class="navigation-item"> <a href="https://therdas.github.io/post"> Blog </a> </li>
-          <li class="navigation-item"> <a href="https://therdas.github.io/tags"> Archives </a> </li>
-          <li class="navigation-item social-media"> 
-            <a href="https://github.com/therdas/"> <img src="https://therdas.github.io/img/social/github.png" /> </a>
-            <a href="https://twitter.com/@therdas"> <img src="https://therdas.github.io/img/social/twitter.png" /> </a>
-            <a href="https://thatsuredidntwork.tumblr.com/"> <img src="https://therdas.github.io/img/social/tumblr.png" /> </a>
-            <a href="https://rdtsod.deviantart.com/"> <img src="https://therdas.github.io/img/social/da.png" /> </a>
-          </li>
-        </ul>
-      </div>
-      </div>
+    <nav id="top-bar">
+      <a href="https://therdas.github.io/" data-clear-link-decor id="logo"><span>rd</span></a>
+      <span id="nav-links" data-hide-mobile>
+        <a href="https://therdas.github.io/tags">Archives</a>
+        <a href="https://therdas.github.io/contact-me">Contact</a>
+        <a href="https://trdmakes.github.io/">trd&bull;makes</a>
+      </span>
+      <span id="hamburger" data-show-mobile onclick="showMenu()">
+        <span></span><span></span><span></span>
+      </span>
+    </nav>
+    <div id="mobile-menu" data-show-mobile class="hidden-menu">
+      <a href="https://therdas.github.io/tags">Archives</a>
+      <a href="https://therdas.github.io/contact-me">Contact</a>
+      <a href="https://trdmakes.github.io/">trd&bull;makes</a>
+      <span id="shade" class="hidden-shade" onclick="showMenu()"></span>
     </div>
-
-    
-
-    <div id="mobile-menu" class="mobile-header scroll-shadow-hide">
-      <a href="https://therdas.github.io/"><img src="https://therdas.github.io/svg/menubar-main.svg" id="mobile-header-image" /></a>
-      <button id="mobile-header-button" onclick="showMobNavDraw()"> 
-        <img src="https://therdas.github.io/svg/menuitems.svg" style="display:block; width: 60px; height: 60px; margin: 0px; padding: 0px;" />
-      </button>
-    </div>
-    <div id="nav-shade" class="hide nav-shade" onclick="showMobNavDraw()"></div>
-    <div id="mobile-nav-drawer" class="hide remove-styling mobile-header-container">
-      <div class="fade mobile-header-item"> <a href="https://therdas.github.io/"> About Me </a> </div>
-      <div class="fade mobile-header-item"> <a href="https://therdas.github.io/project"> Projects </a> </div>
-      <div class="fade mobile-header-item"> <a href="https://therdas.github.io/contact-me"> Contact Me </a> </div> <br>
-      <div class="fade mobile-header-item"> <a href="https://therdas.github.io/post"> Blog </a> </div>
-      <div class="fade mobile-header-item"> <a href="https://therdas.github.io/tags"> Archives </a> </div>
-      <div class="fade mobile-header-item social-media">
-        <a href="https://github.com/therdas/"> <img src="https://therdas.github.io/img/social/github.png" /> </a><a href="https://twitter.com/@therdas"> <img src="https://therdas.github.io/img/social/twitter.png" /> </a><a href="https://thatsuredidntwork.tumblr.com"> <img src="https://therdas.github.io/img/social/tumblr.png" /> </a><a href="https://rdtsod.deviantart.com/"> <img src="https://therdas.github.io/img/social/da.png" /> </a>
-      </div>
-      <br />
-    </div>
-
-    
-
-    <div class="content">
-  <div id='header'>Contact Me</div>
-  <span class="subheading">Leave a Message</span><br/>
-  <span id="welcomer-blurb">Leave a message down below and I'll be sure to reply you as soon as possible at your e-mail address</span>
+    <div id='header'>Contact Me</div>
+    <span id="welcomer-blurb">Leave a message down below and I'll be sure to reply you as soon as possible at your e-mail address</span>
     <div id='co-form-container'>
   	<form name='contactform' id='contact-form' enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSevZtgSQ45VoEuxpIsuosKMg5YicahfayfY115GUj4dIc3afg/formResponse?" target="hidden_iframe" onsubmit='formSubmitted();'>
   		<input id="co-form-name" type="text" name="entry.1576851923" placeholder="Name" required/>
@@ -86,21 +49,14 @@
   		<div id="submitted" class="hidden">Your response was submitted!</div>
  	 </form>
   </div>
+  <div id="social">
+    <span>You can also find me over at: </span>
+    <a href="https://thatsuredidntwork.tumblr.com/"> thatsuredidntwork @ tumblr </a><a href="https://www.twitter.com/therdas/"> therdas @ twitter </a><a href="https://rdtsod.deviantart.com/"> rdtsod @ deviantART </a><a href="mailto:therealrdas@gmail.com"> Good Ol' Email </a>
+  </div>
   <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
 
-  
-  <div id='contact-social'>
-  	<span class="subheading">Other Social Media</span><br/>
- 	<span id="social-blurb">You can easily find me at these places as well</span><br/>
-  	<a href='https://github.com/therdas/' id='so-github'> therdas @ Github </a>
-  	<a href='https://thatsuredidntwork.tumblr.com/' id='so-tumblr'> thatsuredidntwork @ tumblr </a>
-  	<a href='https://twitter.com/@therdas' id='so-twitter'> therdas @ twitter </a>
-  	<a href='https://rdtsod.deviantart.com/' id='so-da'> rdtsod @ deviantART </a>
-  	<a href='mailto:therealrdas@gmail.com' id='so-mail'> mail</a>
-  </div>
 
-		</div>
-		</div>
+		<span id="footer"> Made with <span>&lt;3</span> by <a href="https://trdmakes.github.io/"> therdas</a>. Powered by <a href="https://gohugo.io/">Hugo</a>.</span>
 		<script id="dsq-count-scr" src="//therdas.disqus.com/count.js" async></script>
 	</body>
 </html>
