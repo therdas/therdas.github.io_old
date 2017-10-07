@@ -215,6 +215,9 @@ h1 {
 	width: 4em;
 }
 
+#tags:before {
+	content: '\2022';
+}
 
 /*--------------------------------*/
 /*  Paragraphs, Images & Code      /
@@ -341,6 +344,24 @@ blockquote > p {
 }
 
 /*--------------------------------*/
+/*  Summary + Series              */
+/*--------------------------------*/
+
+.pre-summary-series {
+	width: 53%;
+}
+
+.series {
+	color: rgba(0,0,0,0.6);
+}
+
+.series > a {
+	border-bottom-color: rgba(0,0,0,0.1);
+	color: rgba(0,0,0,0.6);
+	text-transform: capitalize;
+}
+
+/*--------------------------------*/
 /*  Tables                         /
 /*--------------------------------*/
 
@@ -405,7 +426,7 @@ h2, h3, h4, h5, h6 {
 		width: 70%
 	}
 
-    #post-wrap > p, ul, ol {
+    #post-wrap > p, ul, ol, .pre-summary-series {
     	width: 70%;
     }
 
@@ -465,11 +486,20 @@ h2, h3, h4, h5, h6 {
 		width: 90%;
 	}
 
+	#tags:before {
+		content: '';
+	}
+
+	#tags {
+		display: block;
+		margin-top: 5px;
+	}
+
 	h2, h3, h4, h5, h6 {
 		width: 85%
 	}
 
-    #post-wrap > p, ul, ol, .quote {
+    #post-wrap > p, ul, ol, .quote, .pre-summary-series {
     	width: 85%;
     }
 
