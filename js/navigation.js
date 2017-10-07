@@ -1,38 +1,41 @@
-function fadedShow(item, n, baseTime) {
-	setTimeout(function () {item.classList.toggle("fade");}, baseTime+80*n);
-}
+var lastScrollTop = 0;
+var menu = false;
 
-function showMobNavDraw() {
-	var drawer = document.getElementById("mobile-nav-drawer");
-	var shade = document.getElementById("nav-shade");
-	var menu = document.getElementById("mobile-menu");
-	var items = document.getElementsByClassName("mobile-header-item")
-	if(!drawer.classList.contains("hide")) {
-		drawer.classList.toggle("hide");
-		shade.classList.toggle("hide");
-		setTimeout(function(){menu.classList.toggle("remove-shadow-border");}, 300);
-		setTimeout(function(){
-			drawer.classList.toggle("remove-styling");
-			for (var i = 0; i < items.length; i++) {
-				fadedShow(items[i], i, 0);
-			}
-		},570);
+window.addEventListener("scroll", function(){  
+   var navBar = document.getElementById("top-bar");
+   var st = window.pageYOffset || document.documentElement.scrollTop;
+
+   if((st>200)&&(!menu)) {
+   		navBar.classList.add("top-bar-shadow");
+   } else {
+   		navBar.classList.remove("top-bar-shadow");
+   }
+
+   if ((st > lastScrollTop)&&(st > 60+20)){
+       navBar.style.top = "-100%";
+       if(menu) showMenu();
+   } else {
+   	  navBar.style.top = "0";
+   }
+   lastScrollTop = st;
+}, false);
+
+function showMenu () {
+	if(menu) {
+		document.getElementById('mobile-menu').classList.add('hidden-menu');
+		document.getElementById('shade').classList.add('hidden-shade');
+		if((!document.getElementById('top-bar').classList.contains('top-bar-shadow'))&&((window.pageYOffset || document.documentElement.scrollTop)>200)) 
+			setTimeout(function(){ 
+				document.getElementById('top-bar').classList.add('top-bar-shadow');
+			},80);
+		menu = false;
 	} else {
-		drawer.classList.toggle("hide");
-		shade.classList.toggle("hide")
-		for (var i = 0; i < items.length; i++) {
-			fadedShow(items[i], i, 100);
-		}
-		drawer.classList.toggle("remove-styling");
-	    menu.classList.toggle("remove-shadow-border");
+		document.getElementById('mobile-menu').classList.remove('hidden-menu');
+		document.getElementById('shade').classList.remove('hidden-shade');
+		if(document.getElementById('top-bar').classList.contains('top-bar-shadow'))
+			setTimeout(function(){
+				document.getElementById('top-bar').classList.remove('top-bar-shadow');
+			}, 130);
+		menu = true;
 	}
-}
-
-window.onscroll = function() {
-    var nav = document.getElementById('mobile-menu');
-    if ( window.pageYOffset > 150 ) {
-        nav.classList.remove('scroll-shadow-hide');
-    } else {
-        nav.classList.add('scroll-shadow-hide');
-    }
 }
