@@ -1,187 +1,62 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>My New Hugo Site</title>
+    <title>Home</title>
     <link>https://therdas.github.io/index.xml</link>
-    <description>Recent content on My New Hugo Site</description>
+    <description>Recent content on Home</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Sat, 06 May 2017 13:14:30 +0530</lastBuildDate>
+    <language>en-gb</language>
+    <lastBuildDate>Sat, 07 Oct 2017 13:14:30 +0530</lastBuildDate>
     <atom:link href="https://therdas.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Making a static site with Hugo</title>
+      <link>https://therdas.github.io/post/hugo-series-one/</link>
+      <pubDate>Sat, 07 Oct 2017 13:14:30 +0530</pubDate>
+      
+      <guid>https://therdas.github.io/post/hugo-series-one/</guid>
+      <description>
+
+&lt;p&gt;So, Hugo. Why a static site generator, and why exactly Hugo, you ask? Well, a static site is much more faster, secure and simple to host compared to any dynamic site (read: Wordpress). In this part, we&amp;rsquo;ll set up all the things we need for hugo to work.&lt;/p&gt;
+
+&lt;h2 id=&#34;installing-hugo&#34;&gt;Installing Hugo&lt;/h2&gt;
+
+&lt;p&gt;Instructions to install and set up Hugo&lt;/p&gt;
+
+&lt;h2 id=&#34;installing-sublime-packagecontroller-and-node-js&#34;&gt;Installing Sublime, PackageController and Node.js&lt;/h2&gt;
+
+&lt;p&gt;Installing all the stuff above&lt;/p&gt;
+
+&lt;h3 id=&#34;other-stuff&#34;&gt;Other stuff&lt;/h3&gt;
+
+&lt;p&gt;Yep, other stuff.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Welcome to the blog!</title>
       <link>https://therdas.github.io/post/welcome/</link>
-      <pubDate>Sat, 06 May 2017 13:14:30 +0530</pubDate>
+      <pubDate>Fri, 06 Oct 2017 07:49:30 +0530</pubDate>
       
       <guid>https://therdas.github.io/post/welcome/</guid>
       <description>&lt;p&gt;So.
 Another blog, eh? Well, this is &lt;em&gt;another&lt;/em&gt; blog. Mostly about tech, programming, (ramblings about) design, and other stuff. I&amp;rsquo;ll be using this as a sort of log while I&amp;rsquo;m learning new stuff.&lt;/p&gt;
 
-&lt;p&gt;I think the first series might just be about how I made this blog using Hugo and CSS3 flex-boxes. (yes, most of this site is flex-box. Sorry ie(&amp;lt;10) users. If you can even read this that is)&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;ll start posting tutorials on how to make a hugo theme quite soon, as I myself made this site using Hugo, and boy would it have been a treat to find out all I did during the process &lt;em&gt;before&lt;/em&gt; I started it.&lt;/p&gt;
 
-&lt;p&gt;I&amp;rsquo;m just a amateur programmer and dabbler at design, who has yet got a lot to learn, from Kolkata. I hope you&amp;rsquo;ll strap along for the ride as well!&lt;/p&gt;
+&lt;p&gt;About me then, I&amp;rsquo;m a eighteen year old obsessed with computers, currently pursuing a degree in CS (go figures) from the University of Calcutta. Love music and programming. Hate programming at the same time. Ameteur designer and enthusiastic about making stuff look not bad. This blog will be sort of a (well-written) notebook about all the things I think are interesting, and rants about stuff that is not. I hope you strap along for the ride!&lt;/p&gt;
+
+&lt;p&gt;(Oh, and updates wheneverly, for now at least)&lt;/p&gt;
 </description>
     </item>
     
     <item>
-      <title>twelveth</title>
-      <link>https://therdas.github.io/post/twelveth/</link>
-      <pubDate>Wed, 03 May 2017 01:25:36 +0530</pubDate>
+      <title>Contact Me</title>
+      <link>https://therdas.github.io/contact-me/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://therdas.github.io/post/twelveth/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>eleventh</title>
-      <link>https://therdas.github.io/post/eleventh/</link>
-      <pubDate>Wed, 03 May 2017 01:25:29 +0530</pubDate>
-      
-      <guid>https://therdas.github.io/post/eleventh/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>tenth</title>
-      <link>https://therdas.github.io/post/tenth/</link>
-      <pubDate>Wed, 03 May 2017 01:25:19 +0530</pubDate>
-      
-      <guid>https://therdas.github.io/post/tenth/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>nineth</title>
-      <link>https://therdas.github.io/post/nineth/</link>
-      <pubDate>Wed, 03 May 2017 01:25:13 +0530</pubDate>
-      
-      <guid>https://therdas.github.io/post/nineth/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>eigth</title>
-      <link>https://therdas.github.io/post/eigth/</link>
-      <pubDate>Wed, 03 May 2017 01:25:05 +0530</pubDate>
-      
-      <guid>https://therdas.github.io/post/eigth/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>seventh</title>
-      <link>https://therdas.github.io/post/seventh/</link>
-      <pubDate>Wed, 03 May 2017 01:24:58 +0530</pubDate>
-      
-      <guid>https://therdas.github.io/post/seventh/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>sixth</title>
-      <link>https://therdas.github.io/post/sixth/</link>
-      <pubDate>Wed, 03 May 2017 01:24:52 +0530</pubDate>
-      
-      <guid>https://therdas.github.io/post/sixth/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>fifth</title>
-      <link>https://therdas.github.io/post/fifth/</link>
-      <pubDate>Tue, 02 May 2017 23:45:46 +0530</pubDate>
-      
-      <guid>https://therdas.github.io/post/fifth/</guid>
-      <description>&lt;p&gt;Fifth Post! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pretium vel lacus eu venenatis. Pellentesque eleifend sodales metus, ac sagittis dolor sodales et. Nulla semper enim sed felis pellentesque, quis posuere felis luctus. Quisque consectetur dolor orci, sed viverra odio maximus eget. Fusce porttitor odio in est luctus, ut rhoncus nisl euismod. Nunc non quam quis nibh laoreet congue. Nulla at neque tincidunt, laoreet odio ac, sodales eros. Praesent sed ipsum justo. Fusce vitae rutrum magna. Mauris ut eros metus. Integer ac nulla sed sapien accumsan cursus id nec erat. Cras lectus augue, pulvinar vel felis accumsan, pretium ornare tellus. Nam a pulvinar lacus, porta gravida lacus. Donec gravida enim luctus dui cursus malesuada.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>fourth</title>
-      <link>https://therdas.github.io/post/fourth/</link>
-      <pubDate>Tue, 02 May 2017 23:45:41 +0530</pubDate>
-      
-      <guid>https://therdas.github.io/post/fourth/</guid>
-      <description>&lt;p&gt;fourth post! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pretium vel lacus eu venenatis. Pellentesque eleifend sodales metus, ac sagittis dolor sodales et. Nulla semper enim sed felis pellentesque, quis posuere felis luctus. Quisque consectetur dolor orci, sed viverra odio maximus eget. Fusce porttitor odio in est luctus, ut rhoncus nisl euismod. Nunc non quam quis nibh laoreet congue. Nulla at neque tincidunt, laoreet odio ac, sodales eros. Praesent sed ipsum justo. Fusce vitae rutrum magna. Mauris ut eros metus. Integer ac nulla sed sapien accumsan cursus id nec erat. Cras lectus augue, pulvinar vel felis accumsan, pretium ornare tellus. Nam a pulvinar lacus, porta gravida lacus. Donec gravida enim luctus dui cursus malesuada.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>third</title>
-      <link>https://therdas.github.io/post/third/</link>
-      <pubDate>Tue, 02 May 2017 23:45:34 +0530</pubDate>
-      
-      <guid>https://therdas.github.io/post/third/</guid>
-      <description>&lt;p&gt;third post! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pretium vel lacus eu venenatis. Pellentesque eleifend sodales metus, ac sagittis dolor sodales et. Nulla semper enim sed felis pellentesque, quis posuere felis luctus. Quisque consectetur dolor orci, sed viverra odio maximus eget. Fusce porttitor odio in est luctus, ut rhoncus nisl euismod. Nunc non quam quis nibh laoreet congue. Nulla at neque tincidunt, laoreet odio ac, sodales eros. Praesent sed ipsum justo. Fusce vitae rutrum magna. Mauris ut eros metus. Integer ac nulla sed sapien accumsan cursus id nec erat. Cras lectus augue, pulvinar vel felis accumsan, pretium ornare tellus. Nam a pulvinar lacus, porta gravida lacus. Donec gravida enim luctus dui cursus malesuada.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>second</title>
-      <link>https://therdas.github.io/post/second/</link>
-      <pubDate>Tue, 02 May 2017 23:45:29 +0530</pubDate>
-      
-      <guid>https://therdas.github.io/post/second/</guid>
-      <description>&lt;p&gt;second post! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pretium vel lacus eu venenatis. Pellentesque eleifend sodales metus, ac sagittis dolor sodales et. Nulla semper enim sed felis pellentesque, quis posuere felis luctus. Quisque consectetur dolor orci, sed viverra odio maximus eget. Fusce porttitor odio in est luctus, ut rhoncus nisl euismod. Nunc non quam quis nibh laoreet congue. Nulla at neque tincidunt, laoreet odio ac, sodales eros. Praesent sed ipsum justo. Fusce vitae rutrum magna. Mauris ut eros metus. Integer ac nulla sed sapien accumsan cursus id nec erat. Cras lectus augue, pulvinar vel felis accumsan, pretium ornare tellus. Nam a pulvinar lacus, porta gravida lacus. Donec gravida enim luctus dui cursus malesuada.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>first</title>
-      <link>https://therdas.github.io/post/first/</link>
-      <pubDate>Tue, 02 May 2017 23:45:17 +0530</pubDate>
-      
-      <guid>https://therdas.github.io/post/first/</guid>
-      <description>
-
-&lt;p&gt;First Post! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pretium vel lacus eu venenatis. Pellentesque eleifend sodales metus, ac sagittis dolor sodales et. [etc] Nulla semper enim sed felis pellentesque, quis posuere felis luctus. Quisque consectetur dolor orci, sed viverra odio maximus eget.&lt;/p&gt;
-
-&lt;p&gt;Fusce porttitor odio in est luctus, ut rhoncus nisl euismod. Nunc non quam quis nibh laoreet congue. Nulla at neque tincidunt, laoreet odio ac, sodales eros. Praesent sed ipsum justo. Fusce vitae rutrum magna. Mauris ut eros metus. Integer ac nulla sed sapien accumsan cursus id nec erat. Cras lectus augue, pulvinar vel felis accumsan, pretium ornare tellus. Nam a pulvinar lacus, porta gravida lacus. Donec gravida enim luctus dui cursus malesuada. &lt;img src=&#34;https://therdas.github.io/post-images/kite-flying-in-sky.jpg&#34; alt=&#34;Example image&#34; /&gt; Why not?&lt;/p&gt;
-
-&lt;h1 id=&#34;subheading&#34;&gt;Subheading&lt;/h1&gt;
-
-&lt;p&gt;Fusce porttitor odio in est luctus, ut rhoncus nisl euismod. Nunc non quam quis nibh laoreet congue. Nulla at neque tincidunt, laoreet odio ac, sodales eros. Praesent sed ipsum justo. Fusce vitae rutrum magna. Mauris ut eros metus. Integer ac nulla sed sapien accumsan cursus id nec erat. Cras lectus augue, pulvinar vel felis accumsan, pretium ornare tellus. Nam a pulvinar lacus, porta gravida lacus. Donec gravida enim luctus dui cursus malesuada.&lt;/p&gt;
-
-&lt;h2 id=&#34;subheading-1&#34;&gt;Subheading&lt;/h2&gt;
-
-&lt;p&gt;Fusce porttitor odio in est luctus, ut rhoncus nisl euismod. Nunc non quam quis nibh laoreet congue. Nulla at neque tincidunt, laoreet odio ac, sodales eros. Praesent sed ipsum justo. Fusce vitae rutrum magna. Mauris ut eros metus. Integer ac nulla sed sapien accumsan cursus id nec erat. Cras lectus augue, pulvinar vel felis accumsan, pretium ornare tellus. Nam a pulvinar lacus, porta gravida lacus. Donec gravida enim luctus dui cursus malesuada.&lt;/p&gt;
-
-&lt;h3 id=&#34;subheading-2&#34;&gt;Subheading&lt;/h3&gt;
-
-&lt;p&gt;Fusce porttitor odio in est luctus, ut rhoncus nisl euismod. Nunc non quam quis nibh laoreet congue. Nulla at neque tincidunt, laoreet odio ac, sodales eros. Praesent sed ipsum justo. Fusce vitae rutrum magna. Mauris ut eros metus. Integer ac nulla sed sapien accumsan cursus id nec erat. Cras lectus augue, pulvinar vel felis accumsan, pretium ornare tellus.
-&lt;pre&gt;&lt;code class=&#34;c++&#34;&gt;int main () {
-    std::cout&amp;lt;&amp;lt;&amp;ldquo;Hello World!&amp;rdquo;;
-    for( int i = 0; i &amp;lt; 100; ++i ) {
-        std::cout&amp;lt;&amp;lt; &amp;ldquo;\n&amp;rdquo; &amp;lt;&amp;lt; ( i + 1 ) ;
-    }
-}
-&lt;/code&gt;&lt;/pre&gt;
-Nam a pulvinar lacus, porta gravida lacus. Donec gravida enim luctus dui cursus malesuada.&lt;/p&gt;
-
-&lt;h4 id=&#34;subheading-3&#34;&gt;Subheading&lt;/h4&gt;
-
-&lt;p&gt;Fusce porttitor odio in est luctus, ut rhoncus nisl euismod. Nunc non quam quis nibh laoreet congue. Nulla at neque tincidunt, laoreet odio ac, sodales eros. Praesent sed ipsum justo. Fusce vitae rutrum magna. Mauris ut eros metus. Integer ac nulla sed sapien accumsan cursus id nec erat. Cras lectus augue, pulvinar vel felis accumsan, pretium ornare tellus. Nam a pulvinar lacus, porta gravida lacus. Donec gravida enim luctus dui cursus malesuada.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>elite Concept</title>
-      <link>https://therdas.github.io/project/exampleProjectThree/</link>
-      <pubDate>Tue, 07 Mar 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://therdas.github.io/project/exampleProjectThree/</guid>
-      <description>&lt;p&gt;Projects!&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Buttoned Up</title>
-      <link>https://therdas.github.io/project/exampleProjectTwo/</link>
-      <pubDate>Mon, 06 Mar 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://therdas.github.io/project/exampleProjectTwo/</guid>
-      <description>&lt;p&gt;Projects!&lt;/p&gt;
+      <guid>https://therdas.github.io/contact-me/</guid>
+      <description>&lt;p&gt;Hello!&lt;/p&gt;
 </description>
     </item>
     
