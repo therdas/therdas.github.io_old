@@ -12,6 +12,7 @@
 	margin: 0.5em 0 0 0;
 	padding: 1em;
 	width: 53%;
+	max-width: 1000px;
 }
 
 #series-container > span {
@@ -118,6 +119,7 @@
 .prev-next-container {
 	margin-top: 1em;
 	width: 53%;
+	max-width: 1000px;
 }
 
 .prev-post {
@@ -177,6 +179,7 @@
 	display: block;
 	margin: 1em 0;
 	width: 70%;
+	max-width: 1320.76px;
 }
 
 h1 {
@@ -227,6 +230,7 @@ h1 {
 	line-height: 1.5em;
 	margin: 0 0 1em 0;
 	width: 53%;
+	max-width: 1000px;
 }
 
 p > img, img {
@@ -243,7 +247,7 @@ p > img, img {
  	width: 132%;
 }
 
-.full-bleed, pre {
+pre {
 	margin: 0;
 	width: 70%;
 }
@@ -266,6 +270,7 @@ code {
 #disqus_thread {
 	margin-top: 3em;
 	width: 53%;
+	max-width: 1000px;
 }
 
 /*--------------------------------*/
@@ -317,10 +322,12 @@ iframe {
 	border-radius: 3px;
 	min-height: 400px;
 	width: 70%;
+	max-width: 1320.76px;
 }
 
 .gist {
 	width: 70%;
+	max-width: 1320.76px;
 }
 
 /*--------------------------------*/
@@ -333,6 +340,7 @@ blockquote {
 	margin: 0;
 	padding: 0 0 1em 0;
 	width: 53%;
+	max-width: 1000px;
 }
 
 blockquote > p {
@@ -350,6 +358,7 @@ blockquote > p {
 .pre-summary-series {
 	width: 53%;
 	line-height: 1.5em;
+	max-width: 1000px;
 }
 
 .series {
@@ -373,6 +382,7 @@ table {
 	border: 2px solid rgba(0,0,0,0.2);
 	margin: 1em 0;
 	width: 70%;
+	max-width: 1320.76px;
 }
 
 thead {
@@ -411,6 +421,7 @@ h2, h3, h4, h5, h6 {
 	margin-bottom: 0.3em;
 	text-align: left;
 	width: 53%;
+	max-width: 1000px;
 }
 
 /*--------------------------------*/

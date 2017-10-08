@@ -18,7 +18,8 @@ h2 {
 #body-wrap {
 	display: block;
 	margin-top: 150px;
-	width: 50%;
+	width: 53%;
+	max-width: 1000px;
 }
 
 #body-wrap > div {

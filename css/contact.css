@@ -24,6 +24,7 @@
 	display: inline-block;
 	margin-bottom: 2em;
 	width: 53%;
+	max-width: 1000px;
 }
 
 #co-form-container {
@@ -40,6 +41,7 @@
 	-webkit-transition: all 0.1s linear;
 	transition: all 0.1s linear;
 	width: 53%;
+	max-width: 1000px;
 }
 
 #co-form-name{
@@ -152,6 +154,7 @@
 #social {
 	display: block;
 	width: 53%;
+	max-width: 1000px;
 }
 
 #social > span{
