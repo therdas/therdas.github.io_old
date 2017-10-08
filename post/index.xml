@@ -21,15 +21,66 @@
 
 &lt;h2 id=&#34;installing-hugo&#34;&gt;Installing Hugo&lt;/h2&gt;
 
-&lt;p&gt;Instructions to install and set up Hugo&lt;/p&gt;
+&lt;p&gt;First, go to &lt;a href=&#34;https://github.com/gohugoio/hugo/releases&#34;&gt;Hugo Releases&lt;/a&gt;, and scroll down to the downloads section. There, choose the binary that is suitable for your system and download it:&lt;/p&gt;
 
-&lt;h2 id=&#34;installing-sublime-packagecontroller-and-node-js&#34;&gt;Installing Sublime, PackageController and Node.js&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;For Ubuntu:
 
-&lt;p&gt;Installing all the stuff above&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;32 bit: hugo_0.xx_Linux-32bit.deb&lt;/li&gt;
+&lt;li&gt;64 bit: hugo_0.xx_Linux-64bit.deb&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;For Windows:
 
-&lt;h3 id=&#34;other-stuff&#34;&gt;Other stuff&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;32 bit: hugo_0.xx_Windows-32bit.zip&lt;/li&gt;
+&lt;li&gt;64 bit: hugo_0.xx_Windows-64bit.zip
+&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;p&gt;Yep, other stuff.&lt;/p&gt;
+&lt;p&gt;Where 0.xx denotes the version number (as of this post, latest version is 0.26, you should grab the latest one).&lt;/p&gt;
+
+&lt;p&gt;Now, I&amp;rsquo;m on Windows, so I&amp;rsquo;ll be writing instructions for that, but the same steps should apply on other operating systems as well. You should also refer to &lt;a href=&#34;https://gohugo.io/getting-started/installing/&#34;&gt;the Official Hugo Installation Guide&lt;/a&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Extract the contents of the .zip file you downloaded and copy them over to &lt;code&gt;C:/hugo/bin&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Now rename the executable (eg. &lt;code&gt;hugo_0.26_windows_amd32.exe&lt;/code&gt;, it&amp;rsquo;ll look different depending on what you&amp;rsquo;re installing it for) to hugo.exe&lt;/li&gt;
+&lt;li&gt;Add the folder &lt;code&gt;C:/hugo/bin&lt;/code&gt; to your path variable, you can find instructions on how to do that at the link above, as well as by googleing &amp;ldquo;Adding to system path windows (version)&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;Restart/ Log off and log back in and check by running &lt;code&gt;hugo version&lt;/code&gt; in command prompt, it should show something like this:&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;pre&gt;&lt;code class=&#34;bash&#34;&gt;&gt; hugo version
+Hugo Static Site Generator v0.26 windows/386 BuildDate: 2017-02-27T12:36:30+05:30
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;And you&amp;rsquo;re ready to go! (pun intended)&lt;/p&gt;
+
+&lt;h2 id=&#34;installing-sublime-packagecontrol-and-node-js&#34;&gt;Installing Sublime, PackageControl and Node.js&lt;/h2&gt;
+
+&lt;p&gt;This portion is not necessary, but installing these will make your life a lot easier in the long run.
+Oh, and if you are using something else to Autoprefix your css files, skip installing node.js and &lt;code&gt;sublime-autoprefixer&lt;/code&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;install-sublime-text-and-packagecontrol&#34;&gt;Install Sublime Text and PackageControl&lt;/h3&gt;
+
+&lt;p&gt;First, go to &lt;a href=&#34;https://www.sublimetext.com/&#34;&gt;Sublime Text&amp;rsquo;s&lt;/a&gt; website, grab the latest installer and install it. This should be fairly straightforward.&lt;/p&gt;
+
+&lt;p&gt;Next, go to &lt;a href=&#34;https://packagecontrol.io/installation&#34;&gt;PackageControl&amp;rsquo;s Installation page&lt;/a&gt;, copy the text given in the gray box to the left and open Sublime
+Press &lt;code&gt;Ctrl +&lt;/code&gt;` and paste the code there, and press enter. I&amp;rsquo;ll show why I installed package control in a moment. For now, time to&lt;/p&gt;
+
+&lt;h3 id=&#34;install-node-js&#34;&gt;Install node.js&lt;/h3&gt;
+
+&lt;p&gt;Go to &lt;a href=&#34;https://nodejs.org/en/&#34;&gt;Node.js&lt;/a&gt;, grab the LTS version and install it. Again, the installation should be fairly straightforward. After it&amp;rsquo;s done, log off/on or restart and then head back to sublime.&lt;/p&gt;
+
+&lt;p&gt;Press &lt;code&gt;Ctrl + Shift + P&lt;/code&gt; and type install. &lt;code&gt;Package Control: Install Package&lt;/code&gt; should be selected. Press &lt;code&gt;enter&lt;/code&gt;. Wait till it loads the packages, and then type in &lt;code&gt;Autoprefixer&lt;/code&gt; and press enter. Wait for it to install. After that&amp;rsquo;s done installing, you can use it to autoprefix your &lt;code&gt;.css&lt;/code&gt; files.&lt;/p&gt;
+
+&lt;p&gt;Autoprefixing will be your best friend when you&amp;rsquo;re trying to get modern css features like &lt;code&gt;flex-box&lt;/code&gt; or even something as simple as &lt;code&gt;transition&lt;/code&gt; to run on all browsers. Seeing that a large percentage of people are still using older devices, and the prevalence of browsers like UC (which still doesn&amp;rsquo;t support &lt;code&gt;flex-box&lt;/code&gt; without webkit prefixes), having some backwards compability is never a bad thing.&lt;/p&gt;
+
+&lt;h2 id=&#34;fin&#34;&gt;Fin&lt;/h2&gt;
+
+&lt;p&gt;And now you&amp;rsquo;re ready to do some real website building! (Though, in the next part, coming soon!)&lt;/p&gt;
+
+&lt;p&gt;Do comment to tell what else you&amp;rsquo;d have added or changed in this tutorial, feedback is always welcome!&lt;/p&gt;
 </description>
     </item>
     

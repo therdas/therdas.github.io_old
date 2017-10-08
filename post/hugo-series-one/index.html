@@ -89,15 +89,66 @@
 
 <h2 id="installing-hugo">Installing Hugo</h2>
 
-<p>Instructions to install and set up Hugo</p>
+<p>First, go to <a href="https://github.com/gohugoio/hugo/releases">Hugo Releases</a>, and scroll down to the downloads section. There, choose the binary that is suitable for your system and download it:</p>
 
-<h2 id="installing-sublime-packagecontroller-and-node-js">Installing Sublime, PackageController and Node.js</h2>
+<ul>
+<li>For Ubuntu:
 
-<p>Installing all the stuff above</p>
+<ul>
+<li>32 bit: hugo_0.xx_Linux-32bit.deb</li>
+<li>64 bit: hugo_0.xx_Linux-64bit.deb</li>
+</ul></li>
+<li>For Windows:
 
-<h3 id="other-stuff">Other stuff</h3>
+<ul>
+<li>32 bit: hugo_0.xx_Windows-32bit.zip</li>
+<li>64 bit: hugo_0.xx_Windows-64bit.zip
+<br /></li>
+</ul></li>
+</ul>
 
-<p>Yep, other stuff.</p>
+<p>Where 0.xx denotes the version number (as of this post, latest version is 0.26, you should grab the latest one).</p>
+
+<p>Now, I&rsquo;m on Windows, so I&rsquo;ll be writing instructions for that, but the same steps should apply on other operating systems as well. You should also refer to <a href="https://gohugo.io/getting-started/installing/">the Official Hugo Installation Guide</a></p>
+
+<ol>
+<li>Extract the contents of the .zip file you downloaded and copy them over to <code>C:/hugo/bin</code></li>
+<li>Now rename the executable (eg. <code>hugo_0.26_windows_amd32.exe</code>, it&rsquo;ll look different depending on what you&rsquo;re installing it for) to hugo.exe</li>
+<li>Add the folder <code>C:/hugo/bin</code> to your path variable, you can find instructions on how to do that at the link above, as well as by googleing &ldquo;Adding to system path windows (version)&rdquo;</li>
+<li>Restart/ Log off and log back in and check by running <code>hugo version</code> in command prompt, it should show something like this:</li>
+</ol>
+
+<pre><code class="bash">> hugo version
+Hugo Static Site Generator v0.26 windows/386 BuildDate: 2017-02-27T12:36:30+05:30
+</code></pre>
+
+<p>And you&rsquo;re ready to go! (pun intended)</p>
+
+<h2 id="installing-sublime-packagecontrol-and-node-js">Installing Sublime, PackageControl and Node.js</h2>
+
+<p>This portion is not necessary, but installing these will make your life a lot easier in the long run.
+Oh, and if you are using something else to Autoprefix your css files, skip installing node.js and <code>sublime-autoprefixer</code></p>
+
+<h3 id="install-sublime-text-and-packagecontrol">Install Sublime Text and PackageControl</h3>
+
+<p>First, go to <a href="https://www.sublimetext.com/">Sublime Text&rsquo;s</a> website, grab the latest installer and install it. This should be fairly straightforward.</p>
+
+<p>Next, go to <a href="https://packagecontrol.io/installation">PackageControl&rsquo;s Installation page</a>, copy the text given in the gray box to the left and open Sublime
+Press <code>Ctrl +</code>` and paste the code there, and press enter. I&rsquo;ll show why I installed package control in a moment. For now, time to</p>
+
+<h3 id="install-node-js">Install node.js</h3>
+
+<p>Go to <a href="https://nodejs.org/en/">Node.js</a>, grab the LTS version and install it. Again, the installation should be fairly straightforward. After it&rsquo;s done, log off/on or restart and then head back to sublime.</p>
+
+<p>Press <code>Ctrl + Shift + P</code> and type install. <code>Package Control: Install Package</code> should be selected. Press <code>enter</code>. Wait till it loads the packages, and then type in <code>Autoprefixer</code> and press enter. Wait for it to install. After that&rsquo;s done installing, you can use it to autoprefix your <code>.css</code> files.</p>
+
+<p>Autoprefixing will be your best friend when you&rsquo;re trying to get modern css features like <code>flex-box</code> or even something as simple as <code>transition</code> to run on all browsers. Seeing that a large percentage of people are still using older devices, and the prevalence of browsers like UC (which still doesn&rsquo;t support <code>flex-box</code> without webkit prefixes), having some backwards compability is never a bad thing.</p>
+
+<h2 id="fin">Fin</h2>
+
+<p>And now you&rsquo;re ready to do some real website building! (Though, in the next part, coming soon!)</p>
+
+<p>Do comment to tell what else you&rsquo;d have added or changed in this tutorial, feedback is always welcome!</p>
 
 
         

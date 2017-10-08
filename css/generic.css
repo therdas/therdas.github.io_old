@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Bitter:700');
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,400i,600');
-@import url('https://fonts.googleapis.com/css?family=Merriweather:300,300i,700');
+@import url('https://fonts.googleapis.com/css?family=Merriweather:300,300i,500,700');
 
 
 /*--------------------------------*/
@@ -37,7 +37,7 @@ body {
 /*--------------------------------*/
 
 a, a:visited {
-  border-bottom: 2px solid rgba(0,0,0,0.5);
+  border-bottom: 1px solid rgba(0,0,0,0.5);
   color: black;
   font-style: italic;
   text-decoration: none;
