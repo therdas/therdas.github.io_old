@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Series on Home</title>
+    <link>https://therdas.github.io/series/</link>
+    <description>Recent content in Series on Home</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    
+	<atom:link href="https://therdas.github.io/series/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>hugo-tutorial</title>
+      <link>https://therdas.github.io/series/hugo-tutorial/</link>
+      <pubDate>Tue, 10 Oct 2017 17:45:30 +0530</pubDate>
+      
+      <guid>https://therdas.github.io/series/hugo-tutorial/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,124 @@
+/*
+** For Archives
+*/
+
+h2 {
+	color: rgba(0,0,0,0.8);
+	display: block;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 2.6em;
+	font-weight: 600;
+	line-height: 0.97em;
+	margin: 0 auto 0.1em auto;
+	padding: 0;
+	text-align: center;
+	width: 53%;
+}
+
+#body-wrap {
+	display: block;
+	margin-top: 150px;
+	width: 53%;
+	max-width: 1000px;
+}
+
+#body-wrap > div {
+	padding: 1em;
+	text-align: center;
+	width: 100%;
+} 
+
+/*
+** Type
+*/
+
+#type:before {
+	content: 'Show posts grouped by: '
+}
+
+#type {
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+
+#type > span, #type > a {
+	display: inline-block;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 0.8em;
+	font-style: normal;
+	font-weight: 700;
+	margin: 0;
+	padding: 10px;
+	text-transform: uppercase;
+}
+
+.inactive-type, .active-type {
+	border: 2px solid rgba(0,0,0,0.8);
+}
+
+.active-type {
+	background-color: rgba(0,0,0,0.8);
+	border: none;
+	color: white;
+	padding: 12px !important;
+}
+
+.next-type {
+	border-bottom-right-radius: 3px;
+	border-top-right-radius: 3px;
+}
+
+.prev-type {
+	border-bottom-left-radius: 3px;
+	border-top-left-radius: 3px;
+}
+
+/*
+**	Items
+*/
+
+.items > a {
+	border-radius: 2px;
+	border: none;
+	display: block;
+	font-style: normal;
+	padding: 7px;
+	text-transform: capitalize;
+}
+
+.items > a > span {
+	color: rgba(0,0,0,0.8);
+	font-weight: 700;
+	padding-left: 5px;
+	padding-right: 1em;
+}
+
+/*---------------------------*/
+/* Optimization for Mobile   */
+/*---------------------------*/
+
+@media all and (max-width: 800px) {
+	#body-wrap {
+		width: 70%;
+	}
+
+	#type:before {
+		content: 'Show articles by';
+		display: block;
+		margin-bottom: 0.5em;
+	}
+
+	#type {
+		display: block;
+	}
+}
+
+@media all and (max-width: 500px) {
+	#body-wrap {
+		width: 85%;
+	}
+
+	h2 {
+		font-size: 2em;
+	}
+}
