@@ -3,7 +3,7 @@ import '../sass/index.sass';
 let displayFunctions = {};
 let displayConstants = {
     typewriteDelay: 50,
-    typewriteString: "hi there!\r\ni'm a programmer, student and experimenter.\r\ni like to build experiences.\r\nwhy don't you have a look?\r\n"
+    typewriteString: "hi there!\ni'm a programmer, student and experimenter.\ni like to build experiences.\nwhy don't you have a look?\n"
 }
 
 displayFunctions.typewrite = (index = 0) => {

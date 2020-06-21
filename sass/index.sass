@@ -26,21 +26,30 @@ h1
 
 main
     color: #ffffffbb
+    position: relative
     
     nav
         display: inline-block
-        padding-left: 1em
+        padding-left: 1.2em
+        margin-top: 0.5em
 
         a
             color: #ffffff99
             text-decoration: none
-            margin-right: 1.5em;
+            margin-right: 1.5em
+            text-decoration: underline
+            text-decoration-style: dotted
+            transition: color 0.1s ease-in-out
+
+            &:hover
+                color: #ffffffff
 
     p.intro
-        padding-left: 1em
+        position: absolute
+        display: block
+        padding-left: 1.2em
         font-size: 1.1em
         line-height: 2em
-        height: 10em
 
         span.cursor
             background-color: white
@@ -50,6 +59,32 @@ main
             vertical-align: middle
             animation: 0.75s blink step-end infinite
     
+    p.intro.shadow                  //This is to ensure there is enough space for the element
+        padding-left: 1em           //It prevents reflows (hopefully)
+        font-size: 1.1em
+        line-height: 2em 
+        position: relative
+        display: block
+        opacity: 0
+
+
+article
+    display: block
+    margin-left: -5em
+    width: calc(100% + 10em)
+    background-color: #00fdd6
+    padding: 6em
+
+    &:first-of-type
+        margin-top: 5em
+    
+    div.description
+        h2 
+            margin: 0
+            padding: 0
+            font-size: 1em
+            text-transform: uppercase
+            font-family: 'Roboto slab', sans-serif
 
 @keyframes blink
     from, to
