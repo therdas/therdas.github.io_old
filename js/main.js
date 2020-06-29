@@ -20,5 +20,5 @@ displayFunctions.typewrite = (index = 0) => {
 }
 
 window.onload = e => {
-    displayFunctions.typewrite();
+    setTimeout(() => displayFunctions.typewrite(), 1000);
 }

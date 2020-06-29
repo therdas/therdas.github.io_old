@@ -52,6 +52,7 @@ main
         padding-left: 1.2em
         font-size: 1.1em
         line-height: 2em
+        height: 9.5em
 
         span.cursor
             background-color: white
@@ -65,10 +66,11 @@ main
         padding-left: 1.2em           //It prevents reflows (hopefully)
         font-size: 1.1em
         padding-top: 1em
-        line-height: 2em 
+        line-height: 2em
+        height: 9.5em 
         position: relative
         display: block
-        opacity: 0.1
+        opacity: 0
 
 
 article
@@ -80,19 +82,27 @@ article
     background-color: #00fdd6
     padding: 6em
     box-sizing: border-box
-
+   
     &:first-of-type
         margin-top: 5em
     
-    div.icon
+    img
         flex-grow: 1
         text-align: center
-        img
-            width: 20em
+        padding: 0 10em
+        width: 20em
             
+    img.neutrino 
+        content: url("../img/neutrinominlogo.png")
 
+    &:hover img.neutrino
+        content: url("../img/neutrinomaxlogo.png")
+ 
     div.description
         flex-grow: 1
+        display: inline-flex
+        justify-content: center
+        flex-direction: column
         
         h2 
             margin: 0
@@ -114,17 +124,24 @@ article
                 height: 3.3em
                 padding: 1em 1em 1em 3.5em
                 vertical-align: top
-                background-color: #00000050
+                background-color: #00000030
                 border-radius: 3px
                 text-decoration: none
                 color: #000000fb
                 box-sizing: border-box
                 position: relative
+                transition: all 0.1s ease-in-out
+
+                &:hover
+                    transform: translateY(-4px)
+                    box-shadow: 0 4px 0 #00000030
+                    background-color: #00000020
 
                 i
                     position: absolute
                     left: 0.7em
                     top: 0.55em
+
                     
 
 @keyframes blink
