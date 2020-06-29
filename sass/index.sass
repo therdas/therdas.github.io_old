@@ -91,12 +91,39 @@ article
         text-align: center
         padding: 0 10em
         width: 20em
-            
+        transition: all 0.1s ease-in-out
+    
+    img.shadow
+        width: 1px !important
+        height: 1px !important
+        padding: 0
+        opacity: 0.01
+        display: block
+        box-sizing: border-box
+
     img.neutrino 
         content: url("../img/neutrinominlogo.png")
 
     &:hover img.neutrino
         content: url("../img/neutrinomaxlogo.png")
+
+    img.proto
+        content: url("../img/protominlogo.png")
+
+    &:hover img.proto
+        content: url("../img/protomaxlogo.png")
+
+    img.medkit
+        content: url("../img/medkitminlogo.png")
+
+    &:hover img.medkit
+        content: url("../img/medkitmaxlogo.png")
+
+    img.convert
+        content: url("../img/convertminlogo.png")
+
+    &:hover img.convert
+        content: url("../img/convertmaxlogo.png")
  
     div.description
         flex-grow: 1
@@ -149,3 +176,7 @@ article
         opacity: 0
     50%
         opacity: 100%
+
+//image preloading
+img.neutrino.shadow
+    content: url("../img/neutrinomaxlogo.png")
