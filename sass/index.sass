@@ -159,6 +159,10 @@ article
                 position: relative
                 transition: all 0.1s ease-in-out
 
+                &.disabled
+                    opacity: 0.3
+                    pointer-events: none
+
                 &:hover
                     transform: translateY(-4px)
                     box-shadow: 0 4px 0 #00000030
@@ -180,3 +184,9 @@ article
 //image preloading
 img.neutrino.shadow
     content: url("../img/neutrinomaxlogo.png")
+img.proto.shadow
+    content: url("../img/protomaxlogo.png")
+img.medkit.shadow
+    content: url("../img/medkitmaxlogo.png")
+img.convert.shadow
+    content: url("../img/convertmaxlogo.png")
