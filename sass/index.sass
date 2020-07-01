@@ -1,10 +1,33 @@
+$mediaMinWidth: 750px
+$mediaMaxWidth: 751px
 
+//all credits to Dmitry Sheiko
+@function translate-media-condition($c)
+  $condMap: ( ">maxWidth": "(min-width: #{$mediaMaxWidth + 1})", "<maxWidth": "(max-width: #{$mediaMaxWidth})", ">minWidth": "(min-width: #{$mediaMinWidth + 1})", "<minWidth": "(max-width: #{$mediaMinWidth})")
+  @return map-get( $condMap, $c )
+
+// The media mixin
+@mixin media($args...) 
+    $query: ""
+    @each $arg in $args 
+        $op: ""
+        @if ( $query != "" )
+            $op: " and "
+        $query: $query + $op + translate-media-condition($arg)
+        @debug translate-media-condition("<minWidth")
     
+    @media #{$query}
+        @content
+
 body 
     background-color: rgba(0,0,0,0.85)
     font-family: 'Fira Mono'
-    padding: 5em
     margin: 0
+    padding: 0
+
+    @include media("<minWidth")
+        box-sizing: border-box
+        width: 100% 
 
 h1
     display: block
@@ -13,6 +36,8 @@ h1
     height: 3em
     padding: 0
     margin: 0
+    margin-left: 2em
+    margin-top: 2em
     position: relative
 
     i
@@ -31,8 +56,8 @@ main
     position: relative
     
     nav
-        display: inline-block
-        padding-left: 1.2em
+        display: block
+        padding-left: 5.2em
         margin-top: 0.5em
 
         a
@@ -49,10 +74,12 @@ main
     p.intro
         position: absolute
         display: block
-        padding-left: 1.2em
+        padding-left: 4.8em
         font-size: 1.1em
         line-height: 2em
-        height: 9.5em
+
+        @include media("<minWidth")
+            max-width: 60%
 
         span.cursor
             background-color: white
@@ -63,39 +90,54 @@ main
             animation: 0.75s blink step-end infinite
     
     p.intro.shadow                  //This is to ensure there is enough space for the element
-        padding-left: 1.2em           //It prevents reflows (hopefully)
+        padding-left: 4.8em           //It prevents reflows (hopefully)
         font-size: 1.1em
         padding-top: 1em
-        line-height: 2em
-        height: 9.5em 
+        line-height: 2em 
         position: relative
         display: block
-        opacity: 0
+        opacity: 0.25
 
 
 article
     display: flex
     flex-direction: row
     flex-wrap: wrap
-    margin-left: -5em
-    width: calc(100% + 10em)
+    margin: 0
+    width: 100%
     background-color: #00fdd6
     padding: 6em
     box-sizing: border-box
    
     &:first-of-type
         margin-top: 5em
+
+    &:nth-child(even)
+        flex-direction: row-reverse
+
+    @include media("<minWidth")
+        padding: 0
+        flex-direction: row
+        align-content: center
+        justify-content: center
     
     img
         flex-grow: 1
         text-align: center
         padding: 0 10em
-        width: 20em
+        max-width: 20em
+        display: inline-block
         transition: all 0.1s ease-in-out
+
+        @include media("<minWidth")
+            padding: 0
+            margin-top: 1em
+
     
     img.shadow
         width: 1px !important
         height: 1px !important
+        flex-grow: 0
         padding: 0
         opacity: 0.01
         display: block
@@ -124,19 +166,40 @@ article
 
     &:hover img.convert
         content: url("../img/convertmaxlogo.png")
+
+    img.neutrino.focus
+        content: url("../img/neutrinomaxlogo.png")
+
+    img.proto.focus
+        content: url("../img/protomaxlogo.png")
+
+    img.medkit.focus
+        content: url("../img/medkitmaxlogo.png")
+
+    img.convert.focus
+        content: url("../img/convertmaxlogo.png")
  
     div.description
         flex-grow: 1
         display: inline-flex
         justify-content: center
-        flex-direction: column
-        
+        flex-direction: column  
+        max-width: 100%
+        box-sizing: border-box
+
+        @include media("<minWidth")
+            padding: 1em 4em
+
         h2 
             margin: 0
-            padding: 0
-            font-size: 1em
-            //text-transform: uppercase
-            font-family: 'Roboto slab', sans-serif
+            font-size: 1.2em
+            display: block
+            word-wrap: break-word
+            text-transform: uppercase
+            font-family: 'Open Sans Condensed', sans-serif
+            
+            @include media("<minWidth")
+                text-align: center
         
         span.text
             margin-top: 1em
@@ -145,6 +208,13 @@ article
         span.links
             margin-top: 1em
             display: block
+
+            @include media("<minWidth")
+                display: flex
+                flex-direction: row
+                flex-wrap: wrap
+                margin-left: -0.5em
+                width: calc(100% + 0.5em)
 
             a
                 display: inline-block
@@ -158,6 +228,11 @@ article
                 box-sizing: border-box
                 position: relative
                 transition: all 0.1s ease-in-out
+                margin-bottom: 1em
+
+                @include media("<minWidth")
+                    flex-grow: 1
+                    margin: 0.5em 0.5em
 
                 &.disabled
                     opacity: 0.3
