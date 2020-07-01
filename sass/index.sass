@@ -99,7 +99,7 @@ main
         opacity: 0.25
 
 
-article
+article.project
     display: flex
     flex-direction: row
     flex-wrap: wrap
@@ -143,6 +143,7 @@ article
         display: block
         box-sizing: border-box
 
+    //These allow the image to change when hovered on
     img.neutrino 
         content: url("../img/neutrinominlogo.png")
 
@@ -166,6 +167,8 @@ article
 
     &:hover img.convert
         content: url("../img/convertmaxlogo.png")
+
+    //Since hover doesn't work in mobile devices, custom class to force the image.
 
     img.neutrino.focus
         content: url("../img/neutrinomaxlogo.png")
@@ -248,7 +251,12 @@ article
                     left: 0.7em
                     top: 0.55em
 
-                    
+article.skills
+    color: #ffffffee
+    padding: 6em
+    h2
+        font-family: 'Open Sans Condensed', sans-serif
+        text-transform: uppercase 
 
 @keyframes blink
     from, to
