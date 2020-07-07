@@ -273,3 +273,29 @@ img.medkit.shadow
     content: url("../img/medkitmaxlogo.png")
 img.convert.shadow
     content: url("../img/convertmaxlogo.png")
+
+.skill
+    display: inline-block
+    position: relative
+    min-width: 10em
+    background-color: #ffffff
+    padding: 0.75em 1em
+    text-align: center
+    overflow: hidden
+    border-radius: 10px
+
+    .bar
+        display: block
+        background-color: red
+        position: absolute
+        transition: width 1s ease-in-out
+        width: 1px
+        height: 5em
+        content: ' '
+        left: 0
+        top: 0
+        z-index: 5
+
+    .name
+        position: relative
+        z-index: 100
