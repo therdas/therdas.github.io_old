@@ -67,6 +67,8 @@ main
             text-decoration: underline
             text-decoration-style: dotted
             transition: color 0.1s ease-in-out
+            display: inline-block
+            padding:  0 0.5em 0.75em 0
 
             &:hover
                 color: #ffffffff
@@ -275,12 +277,43 @@ article.skills
         position: relative
         z-index: 100
 
-//image preloading
-img.neutrino.shadow
-    content: url("../img/neutrinomaxlogo.png") !important
-img.proto.shadow
-    content: url("../img/protomaxlogo.png") !important
-img.medkit.shadow
-    content: url("../img/medkitmaxlogo.png") !important
-img.convert.shadow
-    content: url("../img/convertmaxlogo.png") !important
+article.writings
+    color: #ffffffee
+    padding: 4em
+    background-color: rgba(0,0 ,0 ,0.2 )
+
+    h2
+        font-family: 'Open Sans Condensed', sans-serif
+        text-transform: uppercase 
+        width: 100%
+    
+    div
+        h3
+            font-weight: 400
+            font: 'Open Sans Condensed', sans-serif
+        span
+            opacity: 0.5
+
+article.contact
+    color: #ffffffee
+    padding: 4em
+
+
+    h2
+        font-family: 'Open Sans Condensed', sans-serif
+        text-transform: uppercase 
+        width: 100%
+    
+    div
+        position: relative
+
+        span.icon
+            position: absolute   
+            opacity: 0.2
+            font-size: 1em
+            padding-top: 0.05em 
+
+        span.text
+            display: block
+            padding-left: 2em
+            padding-bottom: 1em
