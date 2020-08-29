@@ -70,15 +70,15 @@ window.addEventListener("scroll", throttle(e => {
     
     //credit here:
     //https://gomakethings.com/how-to-test-if-an-element-is-in-the-viewport-with-vanilla-javascript/
-    
     var elements = document.querySelectorAll("article.project");
     for(var el = 0; el < elements.length; ++el) {
-        elements[el].querySelector('img').classList.remove('focus');
+        elements[el].querySelector('img.shadow').classList.remove('shown');
     }
     for(var el = 0; el < elements.length; ++el) {
-        if(isInViewport(elements[el].querySelector('img'), -300)){
-            elements[el].querySelector('img').classList.add('focus');
-            break;
+        if(isInViewport(elements[el], -500)){
+            elements[el].querySelector('img.shadow').classList.add('shown');
+            if(el > 0)
+                elements[el - 1].querySelector('img.shadow').classList.remove('shown');
         }
     }
     

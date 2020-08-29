@@ -1,5 +1,5 @@
-$mediaMinWidth: 750px
-$mediaMaxWidth: 751px
+$mediaMinWidth: 1220px
+$mediaMaxWidth: 1221px
 
 //all credits to Dmitry Sheiko
 @function translate-media-condition($c)
@@ -96,11 +96,18 @@ main
         line-height: 2em 
         position: relative
         display: block
-        opacity: 0.25
+        opacity: 0
+
+@keyframes blink
+    from, to
+        opacity: 0
+    50%
+        opacity: 100%
 
 
 article.project
     display: flex
+    position: relative
     flex-direction: row
     flex-wrap: wrap
     margin: 0
@@ -120,67 +127,45 @@ article.project
         flex-direction: row
         align-content: center
         justify-content: center
+        padding-bottom: 3em
     
-    img
-        flex-grow: 1
+    .image-shower
+        position: relative
         text-align: center
-        padding: 0 10em
-        max-width: 20em
+        padding: 0 3em
+        width: 25em
+        height: 25em
         display: inline-block
+
         transition: all 0.1s ease-in-out
 
         @include media("<minWidth")
             padding: 0
             margin-top: 1em
+        
+        img
+            max-width: 25em
+            position: absolute
+            top: 0
+            left: 0
+            width: 25em
+            height: 25em
 
-    
-    img.shadow
-        width: 1px !important
-        height: 1px !important
-        flex-grow: 0
-        padding: 0
-        opacity: 0.01
-        display: block
-        box-sizing: border-box
+        img.shadow
+            position: absolute
+            top: 0
+            left: 0
+            opacity: 0
+            width: 25em
+            height: 25em
+            transition: opacity 0.07s ease-in-out
+        
+        img.shadow.shown
+            opacity: 1 !important
 
-    //These allow the image to change when hovered on
-    img.neutrino 
-        content: url("../img/neutrinominlogo.png")
-
-    &:hover img.neutrino
-        content: url("../img/neutrinomaxlogo.png")
-
-    img.proto
-        content: url("../img/protominlogo.png")
-
-    &:hover img.proto
-        content: url("../img/protomaxlogo.png")
-
-    img.medkit
-        content: url("../img/medkitminlogo.png")
-
-    &:hover img.medkit
-        content: url("../img/medkitmaxlogo.png")
-
-    img.convert
-        content: url("../img/convertminlogo.png")
-
-    &:hover img.convert
-        content: url("../img/convertmaxlogo.png")
-
-    //Since hover doesn't work in mobile devices, custom class to force the image.
-
-    img.neutrino.focus
-        content: url("../img/neutrinomaxlogo.png")
-
-    img.proto.focus
-        content: url("../img/protomaxlogo.png")
-
-    img.medkit.focus
-        content: url("../img/medkitmaxlogo.png")
-
-    img.convert.focus
-        content: url("../img/convertmaxlogo.png")
+        //These allow the image to change when hovered on
+        &:hover .shadow
+            opacity: 1
  
     div.description
         flex-grow: 1
@@ -253,36 +238,26 @@ article.project
 
 article.skills
     color: #ffffffee
-    padding: 6em
+    padding: 4em
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+
     h2
         font-family: 'Open Sans Condensed', sans-serif
         text-transform: uppercase 
-
-@keyframes blink
-    from, to
-        opacity: 0
-    50%
-        opacity: 100%
-
-//image preloading
-img.neutrino.shadow
-    content: url("../img/neutrinomaxlogo.png")
-img.proto.shadow
-    content: url("../img/protomaxlogo.png")
-img.medkit.shadow
-    content: url("../img/medkitmaxlogo.png")
-img.convert.shadow
-    content: url("../img/convertmaxlogo.png")
+        width: 100%
 
 .skill
     display: inline-block
     position: relative
-    min-width: 10em
     background-color: #ffffff
     padding: 0.75em 1em
     text-align: center
     overflow: hidden
     border-radius: 10px
+    flex-grow: 1
+    margin: 0 1em 1em 0
 
     .bar
         display: block
@@ -299,3 +274,13 @@ img.convert.shadow
     .name
         position: relative
         z-index: 100
+
+//image preloading
+img.neutrino.shadow
+    content: url("../img/neutrinomaxlogo.png") !important
+img.proto.shadow
+    content: url("../img/protomaxlogo.png") !important
+img.medkit.shadow
+    content: url("../img/medkitmaxlogo.png") !important
+img.convert.shadow
+    content: url("../img/convertmaxlogo.png") !important
